@@ -1,1 +1,37 @@
+/* https://coolors.co/eae1df-3d405b-d52941-fcd581-e09f3e */
+
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/variables';
+
+$primary: #3D405B;
+$secondary: #D52941;
+$tertiary: #E09F3E;
+$body-color: $primary;
+
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 1.6;
+$h3-font-size: $font-size-base * 1.4;
+$h4-font-size: $font-size-base * 1.25;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
 @import '~bootstrap/scss/bootstrap';
+
+body {
+  background: url(images/page-header-xs.png) repeat-x;
+  margin-top: 1px;
+  padding-top: 50px;
+}
+
+br {
+  background: $secondary;
+  content: ' ';
+  display: block;
+  height: 2px;
+  margin: 25px 0;
+}
+
+.profile-pic {
+  margin-bottom: 10px;
+}
