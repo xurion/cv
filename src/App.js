@@ -41,7 +41,13 @@ class App extends Component {
           </Row>
           <Row>
             <Col>
-              <Experience/>
+              <Experience
+                jobTitle="Delivery Manager"
+                companyName="BrightTALK"
+                otherTitles={['Team Lead', 'Senior Front-End Software Engineer']}
+                startDate={1301313600}
+                endDate={1530532800}
+              />
             </Col>
           </Row>
           <Row>

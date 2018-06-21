@@ -15,9 +15,7 @@ export default class Experience extends Component {
           <div className="company-name">{this.props.companyName}</div>
           <div className="period">{this.props.startDate} - {this.props.endDate}</div>
           <ul className="details">
-            <li className="detail">Point...</li>
-            <li className="detail">Point...</li>
-            <li className="detail">Point...</li>
+            <li className="detail">Details here...</li>
           </ul>
         </Col>
       </Row>
