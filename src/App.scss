@@ -16,12 +16,18 @@ $h4-font-size: $font-size-base * 1.25;
 $h5-font-size: $font-size-base * 1.25;
 $h6-font-size: $font-size-base;
 
+$headings-margin-bottom: $spacer;
+
 @import '~bootstrap/scss/bootstrap';
 
 body {
   background: url(images/page-header-xs.png) repeat-x;
   margin-top: 1px;
   padding-top: 50px;
+}
+
+p {
+  text-align: justify;
 }
 
 br {
