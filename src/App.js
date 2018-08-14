@@ -2,7 +2,10 @@ import React, {Component} from 'react'
 import './App.scss'
 import {Container, Row, Col} from 'reactstrap'
 import Experience from './Experience'
+import Subtitle from './Subtitle'
+import Title from './Title'
 import me from './images/me.png'
+import brighttalkLogo from './images/logos/brighttalk.svg'
 
 class App extends Component {
 
@@ -12,8 +15,8 @@ class App extends Component {
       <React.Fragment>
         <Container>
           <Row>
-            <Col className="text-center">
-              <h1>Dean James</h1>
+            <Col>
+              <Title>Dean James</Title>
             </Col>
           </Row>
           <Row className="justify-content-center">
@@ -29,22 +32,23 @@ class App extends Component {
           </Row>
           <Row>
             <Col>
-              <h2 className="text-center">Profile</h2>
+              <Subtitle>Profile</Subtitle>
               <p>A confident, highly motivated and passionate Agile professional with a broad range of skills. I have more than six years experience in nurturing teams to focus and deliver customer and business needs. I pride myself on enabling and guiding evolution at the team and organisation level, consistently striving for a high standard of work, being good-natured, outgoing and having a good sense of humour.</p>
               <br/>
             </Col>
           </Row>
           <Row>
             <Col>
-              <h2>Experience</h2>
+              <Subtitle>Experience</Subtitle>
             </Col>
           </Row>
           <Row>
             <Col>
               <Experience
-                jobTitle="Delivery Manager"
+                jobTitle="Agile Delivery Manager"
                 companyName="BrightTALK"
-                otherTitles={['Team Lead', 'Senior Front-End Software Engineer']}
+                companyLogo={brighttalkLogo}
+                otherTitles={['Senior Front-End Software Engineer', 'Team Lead']}
                 startDate={1301313600}
                 endDate={1530532800}
               />
