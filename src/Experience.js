@@ -1,19 +1,18 @@
 import React, {Component} from 'react'
-import './App.scss'
 import {Row, Col} from 'reactstrap'
 import PropTypes from 'prop-types'
+import Moment from 'react-moment'
 
 export default class Experience extends Component {
-
   render() {
     return (
-      <React.Fragment>
+      <div className="experience">
         <Row>
           <Col>
-            <h4 className="job-title">{this.props.jobTitle}</h4>
+            <h4 className="job-title text-center">{this.props.jobTitle}</h4>
           </Col>
         </Row>
-        <Row>
+        <Row className="justify-content-center">
           <Col xs="6">
             <div className="company-logo">
               <img src={this.props.companyLogo} alt={this.props.companyName} title={this.props.companyName}/>
@@ -22,14 +21,15 @@ export default class Experience extends Component {
         </Row>
         <Row>
           <Col>
-            <div className="other-titles">Other titles: {this.props.otherTitles.join(', ')}</div>
-            <div className="period">{this.props.startDate} - {this.props.endDate}</div>
-            <ul className="details">
-              <li className="detail">Details here...</li>
-            </ul>
+            {this.props.formerly && <div className="formerly text-center small">Formerly {this.props.formerly}</div>}
+            <p className="period text-center font-weight-bold small"><Moment format="MMM YYYY">{this.props.startDate}</Moment> - <Moment format="MMM YYYY">{this.props.endDate}</Moment></p>
+            <div className="experience-specifics">
+              {this.props.otherTitles && <p className="other-titles text-left"><b>Other titles:</b> {this.props.otherTitles.join(', ')}</p>}
+              {this.props.children}
+            </div>
           </Col>
         </Row>
-      </React.Fragment>
+      </div>
     )
   }
 }
@@ -39,6 +39,6 @@ Experience.propTypes = {
   companyName: PropTypes.string.isRequired,
   endDate: PropTypes.number.isRequired,
   jobTitle: PropTypes.string.isRequired,
-  otherTitles: PropTypes.array.isRequired,
+  otherTitles: PropTypes.array,
   startDate: PropTypes.number.isRequired
 }
