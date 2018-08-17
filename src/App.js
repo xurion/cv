@@ -3,13 +3,12 @@ import './App.scss'
 import {Container, Row, Col} from 'reactstrap'
 import Experience from './Experience'
 import Subtitle from './Subtitle'
-import Title from './Title'
 import ReadMore from './ReadMore'
 import List from './List'
 import TitledList from './TitledList'
 import TabDetails from './TabDetails'
 import Br from './Br'
-import me from './images/me.png'
+import Portrait from './Portrait'
 import brighttalkLogo from './images/logos/brighttalk.svg'
 import bettorLogo from './images/logos/bettor.png'
 import sqLogo from './images/logos/sq.svg'
@@ -19,23 +18,20 @@ export default class App extends Component {
     return (
       <Container>
         <Row>
-          <Col>
-            <Title>Dean James</Title>
+          <Col xs={6} sm={4} md={3} className="d-none d-sm-block d-lg-none">
+            <Portrait/>
           </Col>
-        </Row>
-        <Row className="justify-content-center">
-          <Col xs={6}>
-            <img className="img-fluid profile-pic" src={me} alt="Dean James"/>
+          <Col xs={12} sm={8} md={9} lg={12}>
+            <h1 className="text-center text-lg-left">Dean James</h1>
+            <Col xs={6} className="d-sm-none offset-3">
+              <Portrait/>
+            </Col>
+            <div className="h2 text-center text-lg-left">Software Delivery &amp; Agile Solutions Professional</div>
           </Col>
         </Row>
         <Row>
-          <Col className="text-center">
-            <div className="h2">Software Delivery &amp; Agile Solutions Professional</div>
+          <Col>
             <Br/>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
             <Subtitle>Profile</Subtitle>
             <p>A confident, highly motivated and passionate Agile professional with a broad range of skills. I have
               more than six years experience in nurturing teams to focus and deliver customer and business needs. I
