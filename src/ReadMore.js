@@ -12,7 +12,6 @@ export default class ReadMore extends Component {
   }
 
   render() {
-    console.log('a', styles)
     return this.state.show ? this.props.children : <Button cssModule={styles} block color="primary" onClick={() => {this.setState({show: true})}}>Read more</Button>
   }
 }

@@ -5,13 +5,16 @@ import Experience from './Experience'
 import Subtitle from './Subtitle'
 import Title from './Title'
 import ReadMore from './ReadMore'
+import List from './List'
 import TitledList from './TitledList'
+import TabDetails from './TabDetails'
+import Br from './Br'
 import me from './images/me.png'
 import brighttalkLogo from './images/logos/brighttalk.svg'
 import bettorLogo from './images/logos/bettor.png'
 import sqLogo from './images/logos/sq.svg'
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <Container>
@@ -28,7 +31,7 @@ class App extends Component {
         <Row>
           <Col className="text-center">
             <div className="h2">Software Delivery &amp; Agile Solutions Professional</div>
-            <br/>
+            <Br/>
           </Col>
         </Row>
         <Row>
@@ -38,7 +41,27 @@ class App extends Component {
               more than six years experience in nurturing teams to focus and deliver customer and business needs. I
               pride myself on enabling and guiding evolution at the team and organisation level, consistently striving
               for a high standard of work, being good-natured, outgoing and having a good sense of humour.</p>
-            <br/>
+            <Br/>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Subtitle>Skills</Subtitle>
+            <List points={[
+              'Lean Kanban expert.',
+              'Agile champion & coach.',
+              'Probabilistic forecaster over estimation.',
+              'Technical excellence & SOLID evangelist.',
+              'Gherkin scenario and BDD expert.',
+              'Very strong engineering background.',
+              'Pragmatic decision maker.',
+              'Advocate for team transparency.',
+              'Nurturer of safe-to-fail psychologically safe cultures.',
+              'Analyser of all things measurable.',
+              'Bridges the natural language gap between business and engineer.',
+              'Minimum viable product & time to market advisor.',
+            ]}/>
+            <Br/>
           </Col>
         </Row>
         <Row>
@@ -69,7 +92,7 @@ class App extends Component {
                   teamwork, breaking down work items, and how slowing down to speed up is a must. I also found this
                   approach to be one of the best ways to coach others external to my team who were curious, but yet to
                   be convinced.</p>
-                <TitledList title="Other responsibilities include" points={[
+                <TitledList title="Other responsibilities include:" points={[
                   'Enable and coach the team to utilise Kanban to balance capacity against demand.',
                   'Analyse team bottlenecks and adapt the team approach as required, using Little’s Law, queueing theory and the theory of constraints.',
                   'Track team delivery cadence with cycle times and lead times to identify issues early and enable discussion and adaptation.',
@@ -94,12 +117,12 @@ class App extends Component {
               companyName="Bettor.com"
               formerly="IbetX Ltd."
               companyLogo={bettorLogo}
-              startDate={1202688000000}
-              endDate={1300406400000}
+              startDate={1207569600000}
+              endDate={1300449600000}
             >
               <p>Responsible for heading the front-end software development and graphic design team. Line managed one dedicated designer and one dedicated JavaScript, CSS and HTML engineer.</p>
               <ReadMore>
-                <p>Heavily involved in a two-year website and brand overhaul, built in Zend framework, jQuery and WebSocket technology. Includes the development of payment gateways, real-time user-to-user betting interfaces, social networking tools and sports news feeds.</p>
+                <p>Heavily involved in a two-year website and brand overhaul, built in Zend framework, jQuery and WebSocket technology. Included payment gateways, real-time user-to-user betting interfaces, social networking tools and sports news feeds.</p>
               </ReadMore>
             </Experience>
           </Col>
@@ -108,59 +131,61 @@ class App extends Component {
           <Col>
             <Experience
               jobTitle="Software Engineer"
+              otherTitles={['Web Designer']}
               companyName="SQ Digital"
               formerly="SearchQuest UK Ltd."
               companyLogo={sqLogo}
-              startDate={0}
-              endDate={0}
+              startDate={1108987200000}
+              endDate={1207310400000}
+              noMargin
             >
               <p>Responsible for the majority of a large number of projects from beginning to end. Taking bespoke customer requirements, designing PhotoShop layouts (some including full branding), developing the PHP back-end and JS/HTML/CSS front-end, setting up hosting via IIS and Fasthosts, as well as customer support.</p>
+              <Br/>
             </Experience>
           </Col>
         </Row>
-        {/*<Row>*/}
-        {/*<Col>*/}
-        {/*<h2>Professional Skills</h2>*/}
-        {/*</Col>*/}
-        {/*</Row>*/}
-        {/*<Row>*/}
-        {/*<Col>*/}
-        {/*<p>Skills here...</p>*/}
-        {/*</Col>*/}
-        {/*</Row>*/}
-        {/*<Row>*/}
-        {/*<Col>*/}
-        {/*<h2>Personal</h2>*/}
-        {/*</Col>*/}
-        {/*</Row>*/}
-        {/*<Row>*/}
-        {/*<Col>*/}
-        {/*Personal skills here...*/}
-        {/*</Col>*/}
-        {/*</Row>*/}
-        {/*<Row>*/}
-        {/*<Col>*/}
-        {/*<h2>Contact</h2>*/}
-        {/*</Col>*/}
-        {/*</Row>*/}
-        {/*<Row>*/}
-        {/*<Col>*/}
-        {/*Contact details here...*/}
-        {/*</Col>*/}
-        {/*</Row>*/}
-        {/*<Row>*/}
-        {/*<Col>*/}
-        {/*<h3>Social</h3>*/}
-        {/*</Col>*/}
-        {/*</Row>*/}
-        {/*<Row>*/}
-        {/*<Col>*/}
-        {/*Links in here?...*/}
-        {/*</Col>*/}
-        {/*</Row>*/}
+        <Row>
+          <Col>
+            <Subtitle>Me</Subtitle>
+            <p>I am a critical data-driven thinker and I have strong Agile analytical and organisational skills.</p>
+            <ReadMore>
+              <p>I attend various Kanban and Agile meetups in order to keep myself up to date with how other companies and coaches tackle real-world Lean delivery issues. Although I do reference a variety of reading material, meetups are my go-to source for modern techniques and advice.</p>
+              <p>I love the different unique challenges around software delivery.</p>
+              <p>I am lively, outgoing and approachable. I love playing video games (especially RPGs), developing software on pet projects and cooking in my dream kitchen, having wanted to be a chef when I was younger.</p>
+              <p>Loyalty is an important value to me, and I understand that it is vital to become invested in a product and an organisation in order to embrace and do my part to deliver their vision and goals. I am able to work on my own, but almost always have found that teamwork trumps all silo-based work.</p>
+              <p>My person-to-person and written skills are excellent and I always try to bring enthusiasm and adaptability to my work.</p>
+            </ReadMore>
+            <Br/>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Subtitle>Contact</Subtitle>
+            <TabDetails details={{
+              Surname: 'James',
+              Forename: 'Dean',
+              Birth: '13th January 1981',
+              Sex: 'Male',
+              Address: ['71 Hampton Gardens', 'Southend-on-Sea', 'Essex', 'SS2 6RT'],
+              Citizenship: 'British',
+              Telephone: '07545 466331',
+              Email: {text: 'jobs@deanj.co.uk', url: 'jobs@deanj.co.uk'},
+              CV: {text: 'deanj.co.uk/cv', url: 'http://www.deanj.co.uk/cv'},
+            }}/>
+            <Br/>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Subtitle>Social</Subtitle>
+            <TabDetails details={{
+              Twitter: {text: '@leandeanjames', url: 'https://twitter.com/leandeanjames'},
+              LinkedIn: {text: 'linkedin.com/in/dean-james-74860014', url: 'https://www.linkedin.com/in/dean-james-74860014'}
+            }}/>
+            <Br/>
+          </Col>
+        </Row>
       </Container>
     )
   }
 }
-
-export default App

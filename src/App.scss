@@ -1,13 +1,13 @@
 /* https://coolors.co/eae1df-3d405b-d52941-fcd581-e09f3e */
 
-@import '~bootstrap/scss/functions';
-@import '~bootstrap/scss/mixins';
-@import '~bootstrap/scss/variables';
-
 $primary: #3D405B;
 $secondary: #D52941;
 $tertiary: #E09F3E;
 $body-color: $primary;
+
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/variables';
 
 $h1-font-size: $font-size-base * 2.5;
 $h2-font-size: $font-size-base * 1.6;
@@ -32,7 +32,7 @@ p {
   text-align: justify;
 }
 
-br {
+.br {
   background: $secondary;
   content: ' ';
   display: block;
@@ -55,10 +55,10 @@ br {
   margin-bottom: $headings-margin-bottom;
   opacity: 0.25;
   text-align: center;
-}
 
-.subtitle-base::before {
-  content: "~";
+  &::before {
+    content: "~";
+  }
 }
 
 .job-title {
@@ -78,8 +78,20 @@ br {
 
 .experience {
   margin-bottom: $section-spacing;
+
+  &.last {
+    margin-bottom: 0;
+  }
+
+  .formerly {
+    font-size: $small-font-size * .9;
+  }
 }
 
-.formerly {
-  font-size: $small-font-size * .9;
+.tab-details {
+  .key {
+    font-weight: bold;
+    padding-right: 20px;
+    vertical-align: top;
+  }
 }

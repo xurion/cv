@@ -5,8 +5,12 @@ import Moment from 'react-moment'
 
 export default class Experience extends Component {
   render() {
+
+    let classNames = 'experience'
+    classNames = this.props.noMargin ? `${classNames} last` : classNames
+
     return (
-      <div className="experience">
+      <div className={classNames}>
         <Row>
           <Col>
             <h4 className="job-title text-center">{this.props.jobTitle}</h4>
@@ -24,7 +28,7 @@ export default class Experience extends Component {
             {this.props.formerly && <div className="formerly text-center small">Formerly {this.props.formerly}</div>}
             <p className="period text-center font-weight-bold small"><Moment format="MMM YYYY">{this.props.startDate}</Moment> - <Moment format="MMM YYYY">{this.props.endDate}</Moment></p>
             <div className="experience-specifics">
-              {this.props.otherTitles && <p className="other-titles text-left"><b>Other titles:</b> {this.props.otherTitles.join(', ')}</p>}
+              {this.props.otherTitles && <p className="other-titles text-left small"><b>Other titles:</b> {this.props.otherTitles.join(', ')}</p>}
               {this.props.children}
             </div>
           </Col>
@@ -40,5 +44,6 @@ Experience.propTypes = {
   endDate: PropTypes.number.isRequired,
   jobTitle: PropTypes.string.isRequired,
   otherTitles: PropTypes.array,
-  startDate: PropTypes.number.isRequired
+  startDate: PropTypes.number.isRequired,
+  noMargin: PropTypes.bool
 }
