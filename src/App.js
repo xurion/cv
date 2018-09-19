@@ -17,31 +17,33 @@ export default class App extends Component {
   render() {
     return (
       <Container>
+        <a href="https://github.com/xurion/cv"><img style={{position: 'absolute', top: 0, right: 0, border: 0,}} src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
         <Row>
-          <Col xs={6} sm={4} md={3} className="d-none d-sm-block d-lg-none">
-            <Portrait/>
-          </Col>
-          <Col xs={12} sm={8} md={9} lg={12}>
+          <Col xs={12} sm={8} md={9} lg={10}>
             <h1 className="text-center text-lg-left">Dean James</h1>
             <Col xs={6} className="d-sm-none offset-3">
               <Portrait/>
             </Col>
             <div className="h2 text-center text-lg-left">Software Delivery &amp; Agile Solutions Professional</div>
           </Col>
+          <Col xs={6} sm={4} md={3} lg={2} className="d-none d-sm-block text-lg-right">
+            <Portrait/>
+          </Col>
         </Row>
         <Row>
-          <Col>
-            <Br/>
-            <Subtitle>Profile</Subtitle>
-            <p>A confident, highly motivated and passionate Agile professional with a broad range of skills. I have
-              more than six years experience in nurturing teams to focus and deliver customer and business needs. I
-              pride myself on enabling and guiding evolution at the team and organisation level, consistently striving
-              for a high standard of work, being good-natured, outgoing and having a good sense of humour.</p>
+          <Col xs={12}>
             <Br/>
           </Col>
         </Row>
         <Row>
-          <Col>
+          <Col xs={12} lg={6}>
+            <Subtitle>Introduction</Subtitle>
+            <p>Hi! I'm Dean. I'm a confident, highly motivated and passionate Agile professional with a broad range of skills. I have
+              more than six years experience in nurturing teams to focus and deliver customer and business needs. I
+              pride myself on enabling and guiding evolution at the team and organisation level, consistently striving
+              for a high standard of work, being good-natured, outgoing and having a good sense of humour.</p>
+            <Br/>
+
             <Subtitle>Skills</Subtitle>
             <List points={[
               'Lean Kanban expert.',
@@ -50,23 +52,47 @@ export default class App extends Component {
               'Technical excellence & SOLID evangelist.',
               'Gherkin scenario and BDD expert.',
               'Very strong engineering background.',
-              'Pragmatic decision maker.',
+              'Focuses on quality-first approaches.',
               'Advocate for team transparency.',
-              'Nurturer of safe-to-fail psychologically safe cultures.',
+              'Nurturer of safe-to-fail and psychologically safe cultures.',
               'Analyser of all things measurable.',
               'Bridges the natural language gap between business and engineer.',
               'Minimum viable product & time to market advisor.',
             ]}/>
             <Br/>
+
+            <Subtitle>Me</Subtitle>
+            <p>I'm a data-driven thinker and I have strong Agile analytical and organisational skills.</p>
+            <p>I attend various Kanban and Agile meetups in order to keep myself up to date with how other companies and coaches tackle real-world Lean delivery issues.
+              Although I do reference a variety of reading material, meetups are my go-to source for on-the-ground techniques and advice.</p>
+            <ReadMore>
+              <p>I love the different unique challenges around software delivery. I understand that it is vital to become
+                invested in a product in order to deliver it to it's full potential.</p>
+              <p>I am able to work on my own, but I have almost always found that teamwork trumps all silo-based work.</p>
+              <p>I am lively, outgoing and approachable. I love playing video games (especially RPGs), developing software
+                on pet projects and cooking in my new dream kitchen, having wanted to be a chef when I was younger.</p>
+              <p>I'm a fan of electronic house music and enjoy attending music festivals.</p>
+              <p>My person-to-person and written skills are excellent and I always try to bring enthusiasm and adaptability to my work.</p>
+            </ReadMore>
+            <Br/>
+
+            <Subtitle>Contact</Subtitle>
+            <TabDetails details={{
+              Surname: 'James',
+              Forename: 'Dean',
+              Birth: '13th January 1981',
+              Sex: 'Male',
+              Address: ['71 Hampton Gardens', 'Southend-on-Sea', 'Essex', 'SS2 6RT'],
+              Citizenship: 'British',
+              Telephone: '07545 466331',
+              Email: {text: 'jobs@deanj.co.uk', url: 'mailto:jobs@deanj.co.uk'},
+              CV: {text: 'cv.deanj.co.uk', url: 'http://cv.deanj.co.uk'},
+            }}/>
+            <Br className="d-lg-none"/>
           </Col>
-        </Row>
-        <Row>
-          <Col>
+
+          <Col xs={12} lg={6}>
             <Subtitle>Experience</Subtitle>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
             <Experience
               jobTitle="Agile Delivery Manager"
               companyName="BrightTALK"
@@ -104,10 +130,6 @@ export default class App extends Component {
                 ]}/>
               </ReadMore>
             </Experience>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
             <Experience
               jobTitle="Front-end Team Lead"
               companyName="Bettor.com"
@@ -121,10 +143,7 @@ export default class App extends Component {
                 <p>Heavily involved in a two-year website and brand overhaul, built in Zend framework, jQuery and WebSocket technology. Included payment gateways, real-time user-to-user betting interfaces, social networking tools and sports news feeds.</p>
               </ReadMore>
             </Experience>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
+
             <Experience
               jobTitle="Software Engineer"
               otherTitles={['Web Designer']}
@@ -138,48 +157,14 @@ export default class App extends Component {
               <p>Responsible for the majority of a large number of projects from beginning to end. Taking bespoke customer requirements, designing PhotoShop layouts (some including full branding), developing the PHP back-end and JS/HTML/CSS front-end, setting up hosting via IIS and Fasthosts, as well as customer support.</p>
               <Br/>
             </Experience>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <Subtitle>Me</Subtitle>
-            <p>I am a critical data-driven thinker and I have strong Agile analytical and organisational skills.</p>
-            <ReadMore>
-              <p>I attend various Kanban and Agile meetups in order to keep myself up to date with how other companies and coaches tackle real-world Lean delivery issues. Although I do reference a variety of reading material, meetups are my go-to source for modern techniques and advice.</p>
-              <p>I love the different unique challenges around software delivery.</p>
-              <p>I am lively, outgoing and approachable. I love playing video games (especially RPGs), developing software on pet projects and cooking in my dream kitchen, having wanted to be a chef when I was younger.</p>
-              <p>Loyalty is an important value to me, and I understand that it is vital to become invested in a product and an organisation in order to embrace and do my part to deliver their vision and goals. I am able to work on my own, but almost always have found that teamwork trumps all silo-based work.</p>
-              <p>My person-to-person and written skills are excellent and I always try to bring enthusiasm and adaptability to my work.</p>
-            </ReadMore>
-            <Br/>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <Subtitle>Contact</Subtitle>
-            <TabDetails details={{
-              Surname: 'James',
-              Forename: 'Dean',
-              Birth: '13th January 1981',
-              Sex: 'Male',
-              Address: ['71 Hampton Gardens', 'Southend-on-Sea', 'Essex', 'SS2 6RT'],
-              Citizenship: 'British',
-              Telephone: '07545 466331',
-              Email: {text: 'jobs@deanj.co.uk', url: 'jobs@deanj.co.uk'},
-              CV: {text: 'deanj.co.uk/cv', url: 'http://www.deanj.co.uk/cv'},
-            }}/>
-            <Br/>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
+
             <Subtitle>Social</Subtitle>
             <TabDetails details={{
               Twitter: {text: '@leandeanjames', url: 'https://twitter.com/leandeanjames'},
               LinkedIn: {text: 'linkedin.com/in/dean-james-74860014', url: 'https://www.linkedin.com/in/dean-james-74860014'}
             }}/>
-            <Br/>
           </Col>
+          <Col xs={12}><Br/></Col>
         </Row>
       </Container>
     )

@@ -11,13 +11,13 @@ export default class TabDetails extends Component {
             detail = value[1]
 
           if (Array.isArray(detail)) {
-            detail = detail.map((v, k) =>
-              <React.Fragment key={k}>
-                {v},<br/>
-              </React.Fragment>)
-          }
-
-          if (typeof detail === 'object') {
+            detail = detail.map((v, k) => {
+              let br = k === detail.length - 1 ? '' : <React.Fragment key={k}>,<br/></React.Fragment>
+              return <React.Fragment key={k}>
+                {v}{br}
+              </React.Fragment>
+            })
+          } else if (typeof detail === 'object') {
             detail = <a href={detail.url}>{detail.text}</a>
           }
 

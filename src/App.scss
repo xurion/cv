@@ -1,4 +1,7 @@
-/* https://coolors.co/eae1df-3d405b-d52941-fcd581-e09f3e */
+/*
+https://coolors.co/eae1df-3d405b-d52941-fcd581-e09f3e
+https://photos.google.com/photo/AF1QipOFENQZdqNSHQz9FLggXJCJE448gAieg4lHPVxN
+*/
 
 $primary: #3D405B;
 $secondary: #D52941;
@@ -93,5 +96,11 @@ p {
     font-weight: bold;
     padding-right: 20px;
     vertical-align: top;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .profile-pic {
+    width: 60%
   }
 }
