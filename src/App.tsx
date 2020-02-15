@@ -1,12 +1,13 @@
 import React, {Component} from 'react'
-import './App.scss'
 import {Container, Row, Col} from 'reactstrap'
+
+import './App.scss'
 import Experience from './Experience'
 import Subtitle from './Subtitle'
 import ReadMore from './ReadMore'
 import List from './List'
 import TitledList from './TitledList'
-import TabDetails from './TabDetails'
+import TabularDetails from './TabularDetails'
 import Br from './Br'
 import Portrait from './Portrait'
 import brighttalkLogo from './images/logos/brighttalk.svg'
@@ -101,17 +102,17 @@ export default class App extends Component {
             <Br/>
 
             <Subtitle>Contact</Subtitle>
-            <TabDetails details={{
-              Surname: 'James',
-              Forename: 'Dean',
-              Birth: '13th January 1981',
-              Sex: 'Male',
-              Address: ['71 Hampton Gardens', 'Southend-on-Sea', 'Essex', 'SS2 6RT'],
-              Citizenship: 'British',
-              Telephone: '07545 466331',
-              Email: {text: 'jobs@deanj.co.uk', url: 'mailto:jobs@deanj.co.uk'},
-              CV: {text: 'cv.deanj.co.uk', url: 'http://cv.deanj.co.uk'},
-            }}/>
+            <TabularDetails details={[
+              { Surname: 'James' },
+              { Forename: 'Dean' },
+              { Birth: '13th January 1981' },
+              { Sex: 'Male' },
+              { Address: ['71 Hampton Gardens', 'Southend-on-Sea', 'Essex', 'SS2 6RT']},
+              { Citizenship: 'British'},
+              { Telephone: '07545 466331'},
+              { Email: { text: 'jobs@deanj.co.uk', url: 'mailto:jobs@deanj.co.uk' }},
+              { CV: {text: 'cv.deanj.co.uk', url: 'http://cv.deanj.co.uk'}},
+            ]}/>
             <Br className="d-lg-none"/>
           </Col>
 
@@ -174,7 +175,7 @@ export default class App extends Component {
             </Experience>
 
             <Subtitle>Social</Subtitle>
-            <TabDetails details={{
+            <TabularDetails details={{
               Twitter: {text: '@leandeanjames', url: 'https://twitter.com/leandeanjames'},
               LinkedIn: {text: 'linkedin.com/in/dean-james-74860014', url: 'https://www.linkedin.com/in/dean-james-74860014'}
             }}/>

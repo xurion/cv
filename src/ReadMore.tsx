@@ -1,10 +1,13 @@
-import React, {Component} from 'react'
+import React from 'react'
 import {Button} from 'reactstrap'
 
-export default class ReadMore extends Component {
+interface ReadMoreState {
+  show: boolean
+}
 
+export default class ReadMore extends React.Component<{}, ReadMoreState> {
   constructor() {
-    super();
+    super({});
     this.state = {
       show: false
     }

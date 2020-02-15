@@ -1,14 +1,31 @@
-import React, {Component} from 'react'
-import PropTypes from 'prop-types'
+import React from 'react'
 
-export default class TabDetails extends Component {
+// interface KeyedStrings {
+//   [key: string]: string
+// }
+
+// const keyed: KeyedStrings = {
+//   foo: 'bar',
+//   bar: 'foo'
+// }
+
+// type KeyedDetails = {
+//   [key: string]: string
+// }
+
+interface TabularDetailsProps {
+  //details: string[] | KeyedDetails
+  details: any
+}
+
+export default class TabularDetails extends React.Component<TabularDetailsProps> {
   render() {
     return (
       <table className="tab-details">
         <tbody>
         {Object.entries(this.props.details).map(value => {
           let key = value[0],
-            detail = value[1]
+            detail = value[1] as Array<any>
 
           if (Array.isArray(detail)) {
             detail = detail.map((v, k) => {
@@ -18,7 +35,8 @@ export default class TabDetails extends Component {
               </React.Fragment>
             })
           } else if (typeof detail === 'object') {
-            detail = <a href={detail.url}>{detail.text}</a>
+            //@ts-ignore
+            detail = [<a href={detail.url}>{detail.text}</a>]
           }
 
           return <tr key={key}><td className="key">{key}</td><td className="detail">{detail}</td></tr>
@@ -27,8 +45,4 @@ export default class TabDetails extends Component {
       </table>
     )
   }
-}
-
-TabDetails.propTypes = {
-  details: PropTypes.object.isRequired
 }

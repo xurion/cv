@@ -1,9 +1,19 @@
 import React, {Component} from 'react'
 import {Row, Col} from 'reactstrap'
-import PropTypes from 'prop-types'
 import Moment from 'react-moment'
 
-export default class Experience extends Component {
+interface ExperienceProps {
+  companyLogo: string
+  companyName: string
+  endDate: number
+  jobTitle: string
+  startDate: number
+  otherTitles?: string[]
+  noMargin?: boolean
+  formerly?: string
+}
+
+export default class Experience extends Component<ExperienceProps> {
   render() {
 
     let classNames = 'experience'
@@ -36,14 +46,4 @@ export default class Experience extends Component {
       </div>
     )
   }
-}
-
-Experience.propTypes = {
-  companyLogo: PropTypes.string.isRequired,
-  companyName: PropTypes.string.isRequired,
-  endDate: PropTypes.number.isRequired,
-  jobTitle: PropTypes.string.isRequired,
-  otherTitles: PropTypes.array,
-  startDate: PropTypes.number.isRequired,
-  noMargin: PropTypes.bool
 }
