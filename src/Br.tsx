@@ -1,14 +1,12 @@
-import React from 'react'
+import React from "react";
 
 interface BrProps {
-  className?: string
+  className?: string;
 }
 
 export default (props: BrProps) => {
-  let className = 'br'
-  className = props.className ? `${className} ${props.className}` : className
-  
-  return (
-    <br className={className}/>
-  )
-}
+  let className = "br";
+  className = props.className ? `${className} ${props.className}` : className;
+
+  return <br className={className} />;
+};
