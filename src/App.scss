@@ -1,16 +1,13 @@
-/*
-https://coolors.co/eae1df-3d405b-d52941-fcd581-e09f3e
-https://photos.google.com/photo/AF1QipOFENQZdqNSHQz9FLggXJCJE448gAieg4lHPVxN
-*/
+//https://coolors.co/eae1df-3d405b-d52941-fcd581-e09f3e
 
-$primary: #3D405B;
-$secondary: #D52941;
-$tertiary: #E09F3E;
+$primary: #3d405b;
+$secondary: #d52941;
+$tertiary: #e09f3e;
 $body-color: $primary;
 
-@import '~bootstrap/scss/functions';
-@import '~bootstrap/scss/mixins';
-@import '~bootstrap/scss/variables';
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/variables";
 
 $h1-font-size: $font-size-base * 2.5;
 $h2-font-size: $font-size-base * 1.6;
@@ -21,7 +18,7 @@ $h6-font-size: $font-size-base;
 
 $headings-margin-bottom: $spacer;
 
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 
 $section-spacing: 25px;
 
@@ -37,7 +34,7 @@ p {
 
 .br {
   background: $secondary;
-  content: ' ';
+  content: " ";
   display: block;
   height: 2px;
   margin: $section-spacing 0;
@@ -87,7 +84,7 @@ p {
   }
 
   .formerly {
-    font-size: $small-font-size * .9;
+    font-size: $small-font-size * 0.9;
   }
 }
 
@@ -101,6 +98,6 @@ p {
 
 @include media-breakpoint-up(lg) {
   .profile-pic {
-    width: 60%
+    width: 60%;
   }
 }
