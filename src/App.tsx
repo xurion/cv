@@ -10,6 +10,7 @@ import TitledList from "./TitledList";
 import TabularDetails from "./TabularDetails";
 import Br from "./Br";
 import Portrait from "./Portrait";
+import kobaltLogo from "./images/logos/kobalt.svg";
 import brighttalkLogo from "./images/logos/brighttalk.svg";
 import bettorLogo from "./images/logos/bettor.png";
 import sqLogo from "./images/logos/sq.svg";
@@ -68,7 +69,7 @@ export default class App extends Component {
             <Subtitle>Dev skills</Subtitle>
             <List
               points={[
-                "JavaScript, ES6, JSX",
+                "TypeScript & JavaScript, ES6, JSX",
                 "React, Redux",
                 "jQuery",
                 "Jest, Enzyme, Karma, Jasmine, Chai",
@@ -81,6 +82,8 @@ export default class App extends Component {
                 "Photoshop",
                 "Symfony2",
                 "SOLID",
+                "Trunk based development",
+                "Instrumentation/Monitoring/Datadog",
                 "Behaviour-driven development (BDD)",
                 "Gherkin scenario writing/refining",
                 "Test-driven development (TDD)",
@@ -97,7 +100,6 @@ export default class App extends Component {
                 "Probabilistic forecaster over estimation.",
                 "Technical excellence & SOLID evangelist.",
                 "Gherkin scenario and BDD expert.",
-                "Very strong engineering background.",
                 "Focuses on quality-first approaches.",
                 "Advocate for team transparency.",
                 "Nurturer of safe-to-fail and psychologically safe cultures.",
@@ -174,6 +176,34 @@ export default class App extends Component {
             <Subtitle>Experience</Subtitle>
             <Experience
               jobTitle="Senior Front-End Software Engineer"
+              companyName="Kobalt Music"
+              companyLogo={kobaltLogo}
+              startDate={1544432400000}
+              endDate={1581094800000}
+            >
+              <p>
+                Part of a team responsibile for overseeing the rollout of a
+                two-year front-end project, as well as other client-facing
+                applications as well as the shared front-end component library.
+              </p>
+              <ReadMore>
+                <p>
+                  Technology primarily included TypeScript &amp; React. Built
+                  and maintained BFFs for each of our front-end applications,
+                  maintained exising APIs and set up montoring for server-side
+                  as well as instrumentation to monitor how our customers used
+                  our platform.
+                </p>
+                <p>
+                  One of the main proponents in the adoption of behaviour-driven
+                  development. Also involved in pair programming and system
+                  design interviews.
+                </p>
+              </ReadMore>
+            </Experience>
+
+            <Experience
+              jobTitle="Senior Front-End Software Engineer"
               companyName="BrightTALK"
               companyLogo={brighttalkLogo}
               otherTitles={["Agile Delivery Manager", "Team Lead"]}
@@ -216,6 +246,7 @@ export default class App extends Component {
                 />
               </ReadMore>
             </Experience>
+
             <Experience
               jobTitle="Front-end Team Lead"
               companyName="Bettor.com"
@@ -225,9 +256,9 @@ export default class App extends Component {
               endDate={1300449600000}
             >
               <p>
-                Responsible for heading the front-end software development and
-                graphic design team. Line managed one dedicated designer and one
-                dedicated JavaScript, CSS and HTML engineer.
+                Lead the front-end software development and graphic design team.
+                Line managed one dedicated designer and one dedicated
+                JavaScript, CSS and HTML engineer.
               </p>
               <ReadMore>
                 <p>
