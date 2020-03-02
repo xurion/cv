@@ -7,7 +7,10 @@ import Subtitle from "./Subtitle";
 import ReadMore from "./ReadMore";
 import List from "./List";
 import TitledList from "./TitledList";
-import TabularDetails from "./TabularDetails";
+import TabularDetails, {
+  TabularDetail,
+  TabularDetailLink
+} from "./TabularDetails";
 import Br from "./Br";
 import Portrait from "./Portrait";
 import kobaltLogo from "./images/logos/kobalt.svg";
@@ -69,21 +72,23 @@ export default class App extends Component {
             <Subtitle>Dev skills</Subtitle>
             <List
               points={[
-                "TypeScript & JavaScript, ES6, JSX",
+                "TypeScript, JavaScript, ES6, JSX",
                 "React, Redux",
+                "Jest, Enzyme, Jasmine, Chai",
+                "Styled Components",
+                "WebdriverIO",
                 "jQuery",
-                "Jest, Enzyme, Karma, Jasmine, Chai",
                 "CSS, LESS, SASS/SCSS",
                 "Node",
                 "Docker",
                 "Webpack",
                 "Yarn, NPM",
-                "Bootstrap 3 & 4, including SCSS integration",
+                "Bootstrap, including SCSS integration",
                 "Photoshop",
                 "Symfony2",
                 "SOLID",
                 "Trunk based development",
-                "Instrumentation/Monitoring/Datadog",
+                "Monitoring, Datadog",
                 "Behaviour-driven development (BDD)",
                 "Gherkin scenario writing/refining",
                 "Test-driven development (TDD)",
@@ -100,7 +105,7 @@ export default class App extends Component {
                 "Probabilistic forecaster over estimation.",
                 "Technical excellence & SOLID evangelist.",
                 "Gherkin scenario and BDD expert.",
-                "Focuses on quality-first approaches.",
+                "Quality-first focus.",
                 "Advocate for team transparency.",
                 "Nurturer of safe-to-fail and psychologically safe cultures.",
                 "Analyser of all things measurable.",
@@ -148,27 +153,21 @@ export default class App extends Component {
             <Br />
 
             <Subtitle>Contact</Subtitle>
-            <TabularDetails
-              details={{
-                Surname: "James",
-                Forename: "Dean",
-                Birth: "13th January 1981",
-                Sex: "Male",
-                Address: [
-                  "71 Hampton Gardens",
-                  "Southend-on-Sea",
-                  "Essex",
-                  "SS2 6RT"
-                ],
-                Citizenship: "British",
-                Telephone: "07545 466331",
-                Email: {
-                  text: "jobs@deanj.co.uk",
-                  url: "mailto:jobs@deanj.co.uk"
-                },
-                CV: { text: "cv.deanj.co.uk", url: "http://cv.deanj.co.uk" }
-              }}
-            />
+            <TabularDetails>
+              <TabularDetail label="Surname">James</TabularDetail>
+              <TabularDetail label="Forename">Dean</TabularDetail>
+              <TabularDetail label="Birth">13th January 1981</TabularDetail>
+              <TabularDetail label="Sex">Male</TabularDetail>
+              <TabularDetail label="Location">Southend, Essex</TabularDetail>
+              <TabularDetail label="Citizenship">British</TabularDetail>
+              <TabularDetail label="Telephone">07545 466331</TabularDetail>
+              <TabularDetailLink label="Email" url="mailto:jobs@deanj.co.uk">
+                jobs@deanj.co.uk
+              </TabularDetailLink>
+              <TabularDetailLink label="CV" url="http://cv.deanj.co.uk">
+                cv.deanj.co.uk
+              </TabularDetailLink>
+            </TabularDetails>
             <Br className="d-lg-none" />
           </Col>
 
@@ -182,9 +181,10 @@ export default class App extends Component {
               endDate={1581094800000}
             >
               <p>
-                Part of a team responsibile for overseeing the rollout of a
+                Part of the team responsibile for overseeing the rollout of a
                 two-year front-end project, as well as other client-facing
-                applications as well as the shared front-end component library.
+                applications. Also maintained the internally-shared front-end
+                component library.
               </p>
               <ReadMore>
                 <p>
@@ -195,18 +195,21 @@ export default class App extends Component {
                   our platform.
                 </p>
                 <p>
-                  One of the main proponents in the adoption of behaviour-driven
-                  development. Also involved in pair programming and system
-                  design interviews.
+                  I was one of the main proponents in the adoption of
+                  behaviour-driven development. Also involved in pair
+                  programming and system design interviews.
                 </p>
               </ReadMore>
             </Experience>
 
             <Experience
-              jobTitle="Senior Front-End Software Engineer"
+              jobTitle="Team Lead"
               companyName="BrightTALK"
               companyLogo={brighttalkLogo}
-              otherTitles={["Agile Delivery Manager", "Team Lead"]}
+              otherTitles={[
+                "Agile Delivery Manager",
+                "Senior Front-End Software Engineer"
+              ]}
               startDate={1301313600000}
               endDate={1530532800000}
             >
@@ -291,18 +294,20 @@ export default class App extends Component {
             </Experience>
 
             <Subtitle>Social</Subtitle>
-            <TabularDetails
-              details={{
-                Twitter: {
-                  text: "@leandeanjames",
-                  url: "https://twitter.com/leandeanjames"
-                },
-                LinkedIn: {
-                  text: "linkedin.com/in/dean-james-74860014",
-                  url: "https://www.linkedin.com/in/dean-james-74860014"
-                }
-              }}
-            />
+            <TabularDetails>
+              <TabularDetailLink
+                label="Twitter"
+                url="https://twitter.com/leandeanjames"
+              >
+                @leandeanjames
+              </TabularDetailLink>
+              <TabularDetailLink
+                label="Linked in"
+                url="https://www.linkedin.com/in/dean-james-74860014"
+              >
+                linkedin.com/in/dean-james-74860014
+              </TabularDetailLink>
+            </TabularDetails>
           </Col>
           <Col xs={12}>
             <Br />
