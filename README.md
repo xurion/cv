@@ -9,8 +9,8 @@ http://cv.deanj.co.uk/
 
 ## Run
 
-`yarn start`
-Visit: http://localhost:3000/
+* `yarn start`
+* Visit: http://localhost:3000/
 
 ## Future development
 
