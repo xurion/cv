@@ -5,6 +5,7 @@ http://cv.deanj.co.uk/
 ## Install
 
 `git clone git@github.com:xurion/cv.git`
+`yarn install`
 
 ## Run
 
