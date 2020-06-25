@@ -29,12 +29,15 @@ jobs:
     # Runs a set of commands using the runners shell
     - name: Build
       run: yarn build
+      
+    - name: Archive build
+      run: zip -r build.zip build
 
-    - name: Create release
+    - name: Create latest release
       uses: marvinpinto/action-automatic-releases@v1.0.0
       with:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
         automatic_release_tag: "latest"
         prerelease: true
-        title: "Development Build"
-        files: build/*
+        title: "Latest development build"
+        files: build.zip
