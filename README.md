@@ -1,4 +1,4 @@
-# CV for Dean James
+# My personal CV
 
 http://cv.deanj.co.uk/
 
