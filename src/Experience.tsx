@@ -5,7 +5,7 @@ import Moment from "react-moment";
 interface ExperienceProps {
   companyLogo: string;
   companyName: string;
-  endDate: number;
+  endDate?: number;
   jobTitle: string;
   startDate: number;
   otherTitles?: string[];
@@ -45,7 +45,11 @@ export default class Experience extends Component<ExperienceProps> {
             )}
             <p className="period text-center font-weight-bold small">
               <Moment format="MMM YYYY">{this.props.startDate}</Moment> -{" "}
-              <Moment format="MMM YYYY">{this.props.endDate}</Moment>
+              {this.props.endDate ? (
+                <Moment format="MMM YYYY">{this.props.endDate}</Moment>
+              ) : (
+                "Present"
+              )}
             </p>
             <div className="experience-specifics">
               {this.props.otherTitles && (
