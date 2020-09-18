@@ -9,7 +9,7 @@ import List from "./List";
 import TitledList from "./TitledList";
 import TabularDetails, {
   TabularDetail,
-  TabularDetailLink
+  TabularDetailLink,
 } from "./TabularDetails";
 import Br from "./Br";
 import Portrait from "./Portrait";
@@ -17,6 +17,7 @@ import kobaltLogo from "./images/logos/kobalt.svg";
 import brighttalkLogo from "./images/logos/brighttalk.svg";
 import bettorLogo from "./images/logos/bettor.png";
 import sqLogo from "./images/logos/sq.svg";
+import tescoLogo from "./images/logos/tesco.png";
 
 export default class App extends Component {
   render() {
@@ -92,7 +93,7 @@ export default class App extends Component {
                 "Behaviour-driven development (BDD)",
                 "Gherkin scenario writing/refining",
                 "Test-driven development (TDD)",
-                "Git, SVN"
+                "Git, SVN",
               ]}
             />
             <Br />
@@ -110,7 +111,7 @@ export default class App extends Component {
                 "Nurturer of safe-to-fail and psychologically safe cultures.",
                 "Analyser of all things measurable.",
                 "Bridges the natural language gap between business and engineer.",
-                "Minimum viable product & time to market advisor."
+                "Minimum viable product & time to market advisor.",
               ]}
             />
             <Br />
@@ -175,6 +176,25 @@ export default class App extends Component {
             <Subtitle>Experience</Subtitle>
             <Experience
               jobTitle="Senior Front-End Software Engineer"
+              companyName="Tesco Technology"
+              companyLogo={tescoLogo}
+              startDate={1599469200000}
+            >
+              <p>
+                Part of the team responsible for creating and maintaining
+                various in-store till systems including self checkout. Tasked
+                with creating an in-house solution that severed our dependency
+                on a a third party EPOS solution.
+              </p>
+              <ReadMore>
+                <p>
+                  EPOS systems are created using React, Redux, GraphQL and Node.
+                </p>
+              </ReadMore>
+            </Experience>
+
+            <Experience
+              jobTitle="Senior Front-End Software Engineer"
               companyName="Kobalt Music"
               companyLogo={kobaltLogo}
               startDate={1544432400000}
@@ -208,7 +228,7 @@ export default class App extends Component {
               companyLogo={brighttalkLogo}
               otherTitles={[
                 "Agile Delivery Manager",
-                "Senior Front-End Software Engineer"
+                "Senior Front-End Software Engineer",
               ]}
               startDate={1301313600000}
               endDate={1530532800000}
@@ -244,7 +264,7 @@ export default class App extends Component {
                     "Radiate any and all information out in the open so the status of things is always evident to the team and stakeholders.",
                     "Coach the team to focus on customer needs as a priority, providing them the opportunity to help shape what a product looks like and offers.",
                     "Coach the team to ship minimum viable products to reduce both time to market and cost of delay.",
-                    "Work with business people to introduce Gherkin scenarios in order for teams, developers and the business to speak the same consistent language before, during and after each project."
+                    "Work with business people to introduce Gherkin scenarios in order for teams, developers and the business to speak the same consistent language before, during and after each project.",
                   ]}
                 />
               </ReadMore>
