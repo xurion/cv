@@ -1,8 +1,8 @@
 import React from "react";
 
-interface ListProps {
+type ListProps = {
   points: string[];
-}
+};
 
 export default (props: ListProps) => {
   return (
