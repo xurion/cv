@@ -15,7 +15,7 @@
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-moment": "^0.9.7",
+    "react-moment": "^1.0.0",
     "react-scripts": "^3.4.0",
     "reactstrap": "^8.4.1",
     "typescript": "^3.7.2"
