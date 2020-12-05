@@ -3,20 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
     "bootstrap": "^4.4.1",
     "moment": "^2.24.0",
-    "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-moment": "^0.9.7",
-    "react-scripts": "^3.4.0",
     "reactstrap": "^8.4.1",
     "typescript": "^3.7.2"
   },
@@ -42,6 +33,15 @@
     ]
   },
   "devDependencies": {
-    "@types/reactstrap": "^8.4.1"
+    "@types/reactstrap": "^8.4.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "node-sass": "^4.13.1",
+    "react-scripts": "^3.4.0"
   }
 }
