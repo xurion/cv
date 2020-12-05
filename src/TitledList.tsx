@@ -8,10 +8,10 @@ interface TitledListProps {
 
 const TitledList = (props: TitledListProps) => {
   return (
-    <React.Fragment>
+    <>
       <p>{props.title}</p>
       <List points={props.points} />
-    </React.Fragment>
+    </>
   );
 };
 
