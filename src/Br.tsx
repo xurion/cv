@@ -4,9 +4,11 @@ interface BrProps {
   className?: string;
 }
 
-export default (props: BrProps) => {
+const Br = (props: BrProps) => {
   let className = "br";
   className = props.className ? `${className} ${props.className}` : className;
 
   return <br className={className} />;
 };
+
+export default Br;

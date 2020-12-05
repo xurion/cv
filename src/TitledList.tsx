@@ -6,7 +6,7 @@ interface TitledListProps {
   points: string[];
 }
 
-export default (props: TitledListProps) => {
+const TitledList = (props: TitledListProps) => {
   return (
     <React.Fragment>
       <p>{props.title}</p>
@@ -14,3 +14,5 @@ export default (props: TitledListProps) => {
     </React.Fragment>
   );
 };
+
+export default TitledList;

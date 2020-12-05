@@ -4,7 +4,7 @@ interface TabularDetailsProps {
   children: React.ReactElement[];
 }
 
-export default (props: TabularDetailsProps) => {
+const TabularDetails = (props: TabularDetailsProps) => {
   return (
     <table className="tab-details">
       <tbody>{props.children}</tbody>
@@ -44,3 +44,5 @@ export const TabularDetailLink = (props: TabularDetailLinkProps) => {
     </tr>
   );
 };
+
+export default TabularDetails;
