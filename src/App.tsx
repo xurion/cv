@@ -14,10 +14,12 @@ import TabularDetails, {
 import Br from "./Br";
 import Portrait from "./Portrait";
 import * as logos from "./logos";
+import GithubRibbon from "./GithubRibbon";
 
-export default () => {
+const App = () => {
   return (
     <Container>
+      <GithubRibbon />
       <Row>
         <Col xs={12} sm={8} md={9} lg={10}>
           <h1 className="text-center text-lg-left">Dean James</h1>
@@ -169,7 +171,7 @@ export default () => {
             <p>
               Part of the team responsible for creating and maintaining various
               in-store till systems including self checkout. Tasked with
-              creating an in-house solution that severed our dependency on a a
+              creating an in-house solution that severed our dependency on a
               third party EPOS solution.
             </p>
             <ReadMore>
@@ -321,3 +323,5 @@ export default () => {
     </Container>
   );
 };
+
+export default App;
