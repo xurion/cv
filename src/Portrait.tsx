@@ -1,7 +1,7 @@
 import React from "react";
 import portraitImage from "./images/me.png";
 
-export default () => {
+const Portrait = () => {
   return (
     <img
       className="img-fluid profile-pic"
@@ -10,3 +10,5 @@ export default () => {
     />
   );
 };
+
+export default Portrait;
