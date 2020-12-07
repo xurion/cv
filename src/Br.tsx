@@ -1,8 +1,8 @@
 import React from "react";
 
-interface BrProps {
+type BrProps = {
   className?: string;
-}
+};
 
 const Br = (props: BrProps) => {
   let className = "br";

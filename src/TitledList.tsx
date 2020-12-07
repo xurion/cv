@@ -1,10 +1,10 @@
 import React from "react";
 import List from "./List";
 
-interface TitledListProps {
+type TitledListProps = {
   title: string;
   points: string[];
-}
+};
 
 const TitledList = (props: TitledListProps) => {
   return (

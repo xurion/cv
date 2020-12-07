@@ -1,10 +1,6 @@
-import React from "react";
+import React, { FC } from "react";
 
-interface TabularDetailsProps {
-  children: React.ReactElement[];
-}
-
-const TabularDetails = (props: TabularDetailsProps) => {
+const TabularDetails: FC = (props) => {
   return (
     <table className="tab-details">
       <tbody>{props.children}</tbody>
@@ -12,12 +8,13 @@ const TabularDetails = (props: TabularDetailsProps) => {
   );
 };
 
-interface TabularDetailProps {
-  label: string;
-  children: string;
-}
+export default TabularDetails;
 
-export const TabularDetail = (props: TabularDetailProps) => {
+type TabularDetailProps = {
+  label: string;
+};
+
+export const TabularDetail: FC<TabularDetailProps> = (props) => {
   return (
     <tr key={`detail-${props.label}`}>
       <td className="label">{props.label}</td>
@@ -26,13 +23,12 @@ export const TabularDetail = (props: TabularDetailProps) => {
   );
 };
 
-interface TabularDetailLinkProps {
-  children: string;
+type TabularDetailLinkProps = {
   label: string;
   url: string;
-}
+};
 
-export const TabularDetailLink = (props: TabularDetailLinkProps) => {
+export const TabularDetailLink: FC<TabularDetailLinkProps> = (props) => {
   return (
     <tr>
       <td className="label">{props.label}</td>
@@ -44,5 +40,3 @@ export const TabularDetailLink = (props: TabularDetailLinkProps) => {
     </tr>
   );
 };
-
-export default TabularDetails;
