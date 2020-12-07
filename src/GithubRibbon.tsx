@@ -1,6 +1,6 @@
 import React from "react";
 
-export default () => {
+const GithubRibbon = () => {
   return (
     <a href="https://github.com/xurion/cv">
       <img
@@ -11,3 +11,5 @@ export default () => {
     </a>
   );
 };
+
+export default GithubRibbon;
