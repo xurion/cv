@@ -1,11 +1,12 @@
 import React, { FC } from "react";
 import { Row, Col } from "reactstrap";
 import Moment from "react-moment";
-import { Experience as ExperienceData } from "../types";
+import { Experience as _Experience } from "../types";
 import ReadMore from "./ReadMore";
+import TitledList from "./TitledList";
 
 type ExperienceProps = {
-  experience: ExperienceData;
+  experience: _Experience;
   noMargin?: boolean;
 };
 
@@ -53,14 +54,29 @@ const Experience: FC<ExperienceProps> = (props) => {
                 <b>Other titles:</b> {experience.otherTitles.join(", ")}
               </p>
             )}
-            {experience.about.map((about) => (
-              <p>{about}</p>
+            {experience.about.map((about, i) => (
+              <p key={i.toString()}>{about}</p>
             ))}
-            {experience.aboutReadMore && experience.aboutReadMore.length > 0 && (
+            {experience.aboutReadMore && experience.aboutReadMore.length > 0 ? (
               <ReadMore>
-                {experience.aboutReadMore.map((about) => (
-                  <p>{about}</p>
+                {experience.aboutReadMore.map((about, i) => (
+                  <p key={i.toString()}>{about}</p>
                 ))}
+                {experience.additionalSkillList && (
+                  <TitledList
+                    points={experience.additionalSkillList.skills}
+                    title={experience.additionalSkillList.title}
+                  />
+                )}
+              </ReadMore>
+            ) : (
+              <ReadMore>
+                {experience.additionalSkillList && (
+                  <TitledList
+                    points={experience.additionalSkillList.skills}
+                    title={experience.additionalSkillList.title}
+                  />
+                )}
               </ReadMore>
             )}
           </div>

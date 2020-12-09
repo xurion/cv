@@ -4,17 +4,17 @@ http://cv.deanj.co.uk/
 
 ## Install
 
-* `git clone git@github.com:xurion/cv.git`
-* `yarn install`
+- `git clone git@github.com:xurion/cv.git`
+- `yarn install`
 
 ## Run
 
-* `yarn start`
-* Visit: http://localhost:3000/
+- `yarn start`
+- Visit: http://localhost:3000/
 
-## Future development
+## Configuration
 
-Migrating all data to configuration to allow anyone to use as a template.
+All CV data is stored in `src/config.json`. See the [Configuration Guide](CONFIGURATION.md) to find out more.
 
 ## Other
 

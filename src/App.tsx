@@ -52,8 +52,8 @@ const App = () => {
       <Row>
         <Col xs={12} lg={6}>
           <Subtitle>Introduction</Subtitle>
-          {config.introductions.map((introduction) => (
-            <p>{introduction}</p>
+          {config.introductions.map((introduction, i) => (
+            <p key={i.toString()}>{introduction}</p>
           ))}
           <Br />
 
@@ -70,14 +70,14 @@ const App = () => {
           )}
 
           <Subtitle>Me</Subtitle>
-          {config.me.map((m) => (
-            <p>{m}</p>
+          {config.me.map((m, i) => (
+            <p key={i.toString()}>{m}</p>
           ))}
           {config.meReadMore && (
             <>
               <ReadMore>
-                {config.meReadMore.map((m) => (
-                  <p>{m}</p>
+                {config.meReadMore.map((m, i) => (
+                  <p key={i.toString()}>{m}</p>
                 ))}
               </ReadMore>
               <Br />
@@ -111,10 +111,11 @@ const App = () => {
 
         <Col xs={12} lg={6}>
           <Subtitle>Experience</Subtitle>
-          {config.experience.map((exp, index) => (
+          {config.experience.map((exp, i) => (
             <Experience
+              key={i.toString()}
               experience={exp}
-              noMargin={index === config.experience.length - 1}
+              noMargin={i === config.experience.length - 1}
             />
           ))}
           <Br />
@@ -122,8 +123,12 @@ const App = () => {
           <Subtitle>Social</Subtitle>
           {config.social && (
             <TabularDetails>
-              {config.social.map((social) => (
-                <TabularDetailLink label={social.label} url={social.url}>
+              {config.social.map((social, i) => (
+                <TabularDetailLink
+                  key={i.toString()}
+                  label={social.label}
+                  url={social.url}
+                >
                   {social.text}
                 </TabularDetailLink>
               ))}
