@@ -70,14 +70,14 @@ const Experience: FC<ExperienceProps> = (props) => {
                 )}
               </ReadMore>
             ) : (
-              <ReadMore>
-                {experience.additionalSkillList && (
+              experience.additionalSkillList && (
+                <ReadMore>
                   <TitledList
                     points={experience.additionalSkillList.skills}
                     title={experience.additionalSkillList.title}
                   />
-                )}
-              </ReadMore>
+                </ReadMore>
+              )
             )}
           </div>
         </Col>
