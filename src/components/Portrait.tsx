@@ -1,17 +1,26 @@
-import React from "react";
+import styled from "styled-components";
+import { lg } from "../tools/mixins";
 
-type PortraitProps = {
+type Props = {
   name: string;
 };
 
-const Portrait = (props: PortraitProps) => {
-  return (
-    <img
-      className="img-fluid profile-pic"
-      src={`${process.env.PUBLIC_URL}/images/me.png`}
-      alt={props.name}
-    />
-  );
-};
+const StyledImg = styled.img`
+  margin-bottom: 10px;
+
+  ${lg(`
+    & {
+      width: 60%;
+    }
+  `)}
+`;
+
+const Portrait = (props: Props) => (
+  <StyledImg
+    className="img-fluid"
+    src={`${process.env.PUBLIC_URL}/images/me.png`}
+    alt={props.name}
+  />
+);
 
 export default Portrait;

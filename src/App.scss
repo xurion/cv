@@ -33,18 +33,6 @@ p {
   text-align: justify;
 }
 
-.profile-pic {
-  border-radius: 50%;
-  filter: grayscale(100%);
-  margin-bottom: 10px;
-  transition: 1s;
-  width: 100%;
-
-  &:hover {
-    filter: none;
-  }
-}
-
 .subtitle-text {
   margin-bottom: 0;
 }
@@ -108,10 +96,6 @@ p {
 }
 
 @include media-breakpoint-up(lg) {
-  .profile-pic {
-    width: 60%;
-  }
-
   .tab-links .detail a {
     padding: 0;
   }
