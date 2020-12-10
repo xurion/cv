@@ -16,7 +16,7 @@ All CV information is stored in [src/config.json](src/config.json). This documen
 | telephone             | string, optional                      | Your telephone number. A string so you can freely format the number.                        |
 | email                 | string, optional                      | Your email address.                                                                         |
 | cvUrl                 | string, required                      | The URL where this CV will be located.                                                      |
-| social                | [Social](#Social)[], required         | An array of social links, such as Linked-in.                                                |
+| social                | [Social](#Social)[], required         | An array of social links, such as LinkedIn.                                                |
 | githubRibbon.enabled  | boolean, required                     | Whether the Github ribbon will be displayed.                                                |
 | githubRibbon.link     | string, required if enabled           | The URL of this repository on your Github account.                                          |
 | githubRibbon.imageSrc | string, required if enabled           | The URL of the Github ribbon image.                                                         |
@@ -34,7 +34,7 @@ Numerous social links can be defined in the `social` section above with the foll
 
 | key   | type             | notes                                                     |
 | ----- | ---------------- | --------------------------------------------------------- |
-| label | string, required | The label for this social link. For example, "Linked-in". |
+| label | string, required | The label for this social link. For example, "LinkedIn". |
 | url   | string, required | Your URL for this social network.                         |
 | text  | string, required | The link text for the URL.                                |
 
