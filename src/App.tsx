@@ -21,11 +21,13 @@ const App = () => {
   const fullName = `${config.forenames} ${config.surname}`;
   return (
     <Container>
-      <GithubRibbon
-        githubUrl={config.githubRibbonLink}
-        imgAlt={config.githubRibbonAlt}
-        imgSrc={config.githubRibbonImage}
-      />
+      {config.githubRibbon.enabled && (
+        <GithubRibbon
+          githubUrl={config.githubRibbon.link}
+          imgAlt={config.githubRibbon.imageAlt}
+          imgSrc={config.githubRibbon.imageSrc}
+        />
+      )}
       <Row>
         <Col xs={12} sm={8} md={9} lg={10}>
           <h1 className="text-center text-lg-left">{fullName}</h1>
@@ -92,16 +94,26 @@ const App = () => {
             >
               {config.forenames}
             </TabularDetail>
-            <TabularDetail label="Birth">{config.dob}</TabularDetail>
-            <TabularDetail label="Sex">{config.sex}</TabularDetail>
+            {config.dob && (
+              <TabularDetail label="Birth">{config.dob}</TabularDetail>
+            )}
+            {config.gender && (
+              <TabularDetail label="Gender">{config.gender}</TabularDetail>
+            )}
             <TabularDetail label="Location">{config.location}</TabularDetail>
             <TabularDetail label="Citizenship">
               {config.citizenship}
             </TabularDetail>
-            <TabularDetail label="Telephone">{config.telephone}</TabularDetail>
-            <TabularDetailLink label="Email" url={`mailto:${config.email}`}>
-              {config.email}
-            </TabularDetailLink>
+            {config.telephone && (
+              <TabularDetail label="Telephone">
+                {config.telephone}
+              </TabularDetail>
+            )}
+            {config.email && (
+              <TabularDetailLink label="Email" url={`mailto:${config.email}`}>
+                {config.email}
+              </TabularDetailLink>
+            )}
             <TabularDetailLink label="CV" url={config.cvUrl}>
               {config.cvUrl}
             </TabularDetailLink>

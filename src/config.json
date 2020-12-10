@@ -3,7 +3,7 @@
   "surname": "James",
   "profession": "Front-end Software Engineer & Agile Solutions Architect",
   "dob": "13th January 1981",
-  "sex": "Male",
+  "gender": "Male",
   "location": "Southend, Essex",
   "citizenship": "British",
   "telephone": "07545 466331",
@@ -16,14 +16,17 @@
       "text": "@leandeanjames"
     },
     {
-      "label": "Linked in",
+      "label": "LinkedIn",
       "url": "https://www.linkedin.com/in/dean-james-74860014",
       "text": "linkedin.com/in/dean-james-74860014"
     }
   ],
-  "githubRibbonLink": "https://github.com/xurion/cv",
-  "githubRibbonImage": "https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png",
-  "githubRibbonAlt": "Fork me on GitHub",
+  "githubRibbon": {
+    "enabled": true,
+    "link": "https://github.com/xurion/cv",
+    "imageSrc": "https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png",
+    "imageAlt": "Fork me on GitHub"
+  },
   "introductions": [
     "Hi! I'm Dean. I'm a passionate, customer-focused and quality-first front-end software engineer with a broad range of skills. I have more than ten years experience in delivering business and customer needs in an Agile way, as well as nurturing teams to become the best delivery-focused units they can. I pride myself on enabling and guiding evolution at the team level, consistently striving for a high standard of work, being good-natured, outgoing and having a good sense of humour."
   ],

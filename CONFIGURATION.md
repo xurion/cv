@@ -4,28 +4,29 @@ All CV information is stored in [src/config.json](src/config.json). This documen
 
 ## Personal Information
 
-| key                 | type                                  | notes                                                                                       |
-| ------------------- | ------------------------------------- | ------------------------------------------------------------------------------------------- |
-| forenames           | string, required                      | One or more of your first names.                                                            |
-| surname             | string, required                      | Your surname.                                                                               |
-| profession          | string, required                      | How you would describe your profession or expertise.                                        |
-| dob                 | string, required                      | Date of birth.                                                                              |
-| gender              | string, required                      | Your gender.                                                                                |
-| location            | string, required                      | Where you are located.                                                                      |
-| citizenship         | string, required                      | Your citizenship.                                                                           |
-| telephone           | string, required                      | Your telephone number.                                                                      |
-| email               | string, required                      | Your email address.                                                                         |
-| cvUrl               | string, required                      | The URL where this CV will be located.                                                      |
-| social              | [Social](#Social)[], required         | An array of social links, such as Linked-in.                                                |
-| githubRibbonLink    | string, required                      | The URL of this repository on your Github account.                                          |
-| githubRibbonImage   | string, required                      | The URL of the Github ribbon image.                                                         |
-| githubRibbonAlt     | string, required                      | The `alt` attribute of the ribbon image.                                                    |
-| introductions       | string[], required                    | An array of paragraphs that introduce you as a potential employee.                          |
-| skills              | string[], required                    | An array of your core skills.                                                               |
-| complimentarySkills | string[], optional                    | Additional non-core skills you bring to the table.                                          |
-| me                  | string[], required                    | About you as a person. Can be slightly less formal compared to the `introductions` section. |
-| meReadMore          | string[], optional                    | Additional information about you as a person that is hidden by a "Read More" button.        |
-| experience          | [Experience](#Experience)[], required | An array of work experience information.                                                    |
+| key                   | type                                  | notes                                                                                       |
+| --------------------- | ------------------------------------- | ------------------------------------------------------------------------------------------- |
+| forenames             | string, required                      | One or more of your first names.                                                            |
+| surname               | string, required                      | Your surname.                                                                               |
+| profession            | string, required                      | How you would describe your profession or expertise.                                        |
+| dob                   | string, optional                      | You date of birth.                                                                          |
+| gender                | string, optional                      | Your gender.                                                                                |
+| location              | string, required                      | Where you are located.                                                                      |
+| citizenship           | string, required                      | Your citizenship.                                                                           |
+| telephone             | string, optional                      | Your telephone number. A string so you can freely format the number.                        |
+| email                 | string, optional                      | Your email address.                                                                         |
+| cvUrl                 | string, required                      | The URL where this CV will be located.                                                      |
+| social                | [Social](#Social)[], required         | An array of social links, such as Linked-in.                                                |
+| githubRibbon.enabled  | boolean, required                     | Whether the Github ribbon will be displayed.                                                |
+| githubRibbon.link     | string, required if enabled           | The URL of this repository on your Github account.                                          |
+| githubRibbon.imageSrc | string, required if enabled           | The URL of the Github ribbon image.                                                         |
+| githubRibbon.altText  | string, required if enabled           | The `alt` attribute of the ribbon image.                                                    |
+| introductions         | string[], required                    | An array of paragraphs that introduce you as a potential employee.                          |
+| skills                | string[], required                    | An array of your core skills.                                                               |
+| complimentarySkills   | string[], optional                    | Additional non-core skills you bring to the table.                                          |
+| me                    | string[], required                    | About you as a person. Can be slightly less formal compared to the `introductions` section. |
+| meReadMore            | string[], optional                    | Additional information about you as a person that is hidden by a "Read More" button.        |
+| experience            | [Experience](#Experience)[], required | An array of work experience information.                                                    |
 
 ## Social
 

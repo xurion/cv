@@ -20,21 +20,33 @@ export type Experience = {
   };
 };
 
+type GithubRibbonUsed = {
+  enabled: true;
+  link: string;
+  imageSrc: string;
+  imageAlt: string;
+};
+
+type GithubRibbonNotUsed = {
+  enabled: false;
+  link?: string;
+  imageSrc?: string;
+  imageAlt?: string;
+};
+
 export type Config = {
   forenames: string;
   surname: string;
   profession: string;
-  dob: string;
-  sex: string;
+  dob?: string;
+  gender?: string;
   location: string;
   citizenship: string;
-  telephone: string;
-  email: string;
+  telephone?: string;
+  email?: string;
   cvUrl: string;
   social: Social[];
-  githubRibbonLink: string;
-  githubRibbonImage: string;
-  githubRibbonAlt: string;
+  githubRibbon: GithubRibbonUsed | GithubRibbonNotUsed;
   introductions: string[];
   skills: string[];
   complimentarySkills?: string[];
