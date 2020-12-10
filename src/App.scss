@@ -33,23 +33,6 @@ p {
   text-align: justify;
 }
 
-.subtitle-text {
-  margin-bottom: 0;
-}
-
-.subtitle-base {
-  color: $secondary;
-  font-size: $h2-font-size;
-  line-height: 0.5;
-  margin-bottom: $headings-margin-bottom;
-  opacity: 0.25;
-  text-align: center;
-
-  &::before {
-    content: "~";
-  }
-}
-
 .job-title {
   margin-bottom: 0;
 }
