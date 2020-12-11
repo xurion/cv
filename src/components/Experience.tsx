@@ -4,6 +4,8 @@ import { Experience as _Experience } from "../types";
 import ReadMore from "./ReadMore";
 import TitledList from "./TitledList";
 import styled from "styled-components";
+import { colours } from "../Theme";
+import hexRgb from "hex-rgb";
 
 type ExperienceProps = {
   experience: _Experience;
@@ -15,6 +17,19 @@ const StyledH3 = styled.h3`
 `;
 
 const Experience = (props: ExperienceProps) => {
+  const primaryRgb = hexRgb(colours.primary);
+  const CompanyLogoContainer = styled.div`
+    border: 1px solid
+      rgba(${primaryRgb.red}, ${primaryRgb.green}, ${primaryRgb.blue}, 0.25);
+    margin: 8px 0;
+    padding: 5px 7px;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  `;
+
   let classNames = "experience";
   const { experience, noMargin } = props;
   classNames = noMargin ? `${classNames} last` : classNames;
@@ -28,13 +43,13 @@ const Experience = (props: ExperienceProps) => {
       </Row>
       <Row className="justify-content-center">
         <Col xs="6">
-          <div className="company-logo">
+          <CompanyLogoContainer>
             <img
               src={`${process.env.PUBLIC_URL}/images/${experience.companyLogo}`}
               alt={experience.companyName}
               title={experience.companyName}
             />
-          </div>
+          </CompanyLogoContainer>
         </Col>
       </Row>
       <Row>

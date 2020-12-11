@@ -5,6 +5,7 @@
   "homepage": "https://xurion.github.io/cv",
   "dependencies": {
     "bootstrap": "^4.4.1",
+    "hex-rgb": "^4.2.0",
     "moment": "^2.24.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
