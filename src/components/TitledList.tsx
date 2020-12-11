@@ -6,7 +6,7 @@ type TitledListProps = {
   points: string[];
 };
 
-export default (props: TitledListProps) => {
+const TitledList = (props: TitledListProps) => {
   return (
     <>
       <p>{props.title}</p>
@@ -14,3 +14,5 @@ export default (props: TitledListProps) => {
     </>
   );
 };
+
+export default TitledList;

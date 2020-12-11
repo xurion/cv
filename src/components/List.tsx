@@ -4,12 +4,14 @@ type ListProps = {
   points: string[];
 };
 
-export default (props: ListProps) => {
+const List = (props: ListProps) => {
   return (
     <ul>
       {props.points.map((point, key) => (
-        <li key={key}>{point}</li>
+        <li key={key.toString()}>{point}</li>
       ))}
     </ul>
   );
 };
+
+export default List;
