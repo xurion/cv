@@ -22,10 +22,11 @@ $headings-margin-bottom: $spacer;
 
 $section-spacing: 25px;
 
-body {
-  background: url(images/page-header-xs.png) repeat-x;
-  margin-top: 1px;
-  padding-top: 50px;
+.block-strip {
+  border-bottom: 10px solid $secondary;
+  border-top: 20px solid $primary;
+  height: 31px;
+  margin-bottom: 20px;
 }
 
 p {
