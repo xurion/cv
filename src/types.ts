@@ -23,18 +23,10 @@ export type Experience = {
   };
 };
 
-type GithubRibbonUsed = {
-  enabled: true;
+type GithubRibbon = {
   link: string;
   imageSrc: string;
   imageAlt: string;
-};
-
-type GithubRibbonNotUsed = {
-  enabled: false;
-  link?: string;
-  imageSrc?: string;
-  imageAlt?: string;
 };
 
 export type Config = {
@@ -49,7 +41,7 @@ export type Config = {
   email?: string;
   cvUrl: string;
   social: Social[];
-  githubRibbon: GithubRibbonUsed | GithubRibbonNotUsed;
+  githubRibbon?: GithubRibbon;
   introductions: string[];
   skills: string[];
   complimentarySkills?: string[];

@@ -24,7 +24,7 @@ const App = () => {
     <>
       <BlockStrip />
       <Container>
-        {config.githubRibbon.enabled && (
+        {config.githubRibbon && (
           <GithubRibbon
             githubUrl={config.githubRibbon.link}
             imgAlt={config.githubRibbon.imageAlt}
