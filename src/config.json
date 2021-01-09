@@ -12,15 +12,15 @@
   "social": [
     {
       "label": "LinkedIn",
-      "url": "TBA",
-      "text": "linkedin.com/in/TBA"
+      "url": "https://www.linkedin.com/in/cara-gifford-pitcher-02577a22/",
+      "text": "linkedin.com/in/cara-gifford-pitcher-02577a22"
     }
   ],
   "githubRibbon": {
-    "enabled": true,
-    "link": "https://github.com/xurion/cv",
-    "imageSrc": "https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png",
-    "imageAlt": "Fork me on GitHub"
+    "enabled": false,
+    "link": "",
+    "imageSrc": "",
+    "imageAlt": ""
   },
   "introductions": [
     "Over 13 years experience in the field of Quality Assurance. High level of attention to detail, adaptable, and with experience in Manual and Automation test approaches. Experienced with both Scrum and Agile methodologies and processes across multiple software development areas, including Mobile, Connected devices and Gaming Applications."
