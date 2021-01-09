@@ -1,17 +1,37 @@
 import React from "react";
+import { NestedStringArray } from "../types";
 
 type ListProps = {
+  points: NestedStringArray;
+};
+
+type SubListProps = {
   points: string[];
 };
 
-const List = (props: ListProps) => {
-  return (
-    <ul>
-      {props.points.map((point, key) => (
-        <li key={key.toString()}>{point}</li>
-      ))}
-    </ul>
-  );
-};
+const SubList = (props: SubListProps) => (
+  <ul>
+    {props.points.map((point, key) => (
+      <li key={key.toString()}>{point}</li>
+    ))}
+  </ul>
+);
+
+const List = (props: ListProps) => (
+  <ul>
+    {props.points.map((point, key) => {
+      return (
+        typeof point === "string" && (
+          <li key={key.toString()}>
+            {point}
+            {Array.isArray(props.points[key + 1]) && (
+              <SubList points={props.points[key + 1] as string[]} />
+            )}
+          </li>
+        )
+      );
+    })}
+  </ul>
+);
 
 export default List;

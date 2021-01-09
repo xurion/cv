@@ -4,6 +4,9 @@ export type Social = {
   text: string;
 };
 
+type StringOrStringArray = string | string[];
+export type NestedStringArray = StringOrStringArray[];
+
 export type Experience = {
   jobTitle: string;
   otherTitles?: string[];
@@ -16,7 +19,7 @@ export type Experience = {
   aboutReadMore?: string[];
   additionalSkillList?: {
     title: string;
-    skills: string[];
+    skills: NestedStringArray;
   };
 };
 
