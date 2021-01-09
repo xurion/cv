@@ -41,9 +41,18 @@ const Experience: FC<ExperienceProps> = (props) => {
             </div>
           )}
           <p className="period text-center font-weight-bold small">
-            <Moment format="MMM YYYY">{experience.startDate}</Moment> -{" "}
+            {typeof experience.startDate === "number" ? (
+              <Moment format="MMM YYYY">{experience.startDate}</Moment>
+            ) : (
+              experience.startDate
+            )}{" "}
+            -{" "}
             {experience.endDate ? (
-              <Moment format="MMM YYYY">{experience.endDate}</Moment>
+              typeof experience.endDate === "number" ? (
+                <Moment format="MMM YYYY">{experience.endDate}</Moment>
+              ) : (
+                experience.endDate
+              )
             ) : (
               "Present"
             )}
