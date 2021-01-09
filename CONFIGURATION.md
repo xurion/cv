@@ -16,7 +16,7 @@ All CV information is stored in [src/config.json](src/config.json). This documen
 | telephone             | string, optional                      | Your telephone number. A string so you can freely format the number.                        |
 | email                 | string, optional                      | Your email address.                                                                         |
 | cvUrl                 | string, required                      | The URL where this CV will be located.                                                      |
-| social                | [Social](#Social)[], required         | An array of social links, such as LinkedIn.                                                |
+| social                | [Social](#Social)[], required         | An array of social links, such as LinkedIn.                                                 |
 | githubRibbon.enabled  | boolean, required                     | Whether the Github ribbon will be displayed.                                                |
 | githubRibbon.link     | string, required if enabled           | The URL of this repository on your Github account.                                          |
 | githubRibbon.imageSrc | string, required if enabled           | The URL of the Github ribbon image.                                                         |
@@ -32,11 +32,11 @@ All CV information is stored in [src/config.json](src/config.json). This documen
 
 Numerous social links can be defined in the `social` section above with the following structure:
 
-| key   | type             | notes                                                     |
-| ----- | ---------------- | --------------------------------------------------------- |
+| key   | type             | notes                                                    |
+| ----- | ---------------- | -------------------------------------------------------- |
 | label | string, required | The label for this social link. For example, "LinkedIn". |
-| url   | string, required | Your URL for this social network.                         |
-| text  | string, required | The link text for the URL.                                |
+| url   | string, required | Your URL for this social network.                        |
+| text  | string, required | The link text for the URL.                               |
 
 ## Experience
 
@@ -57,7 +57,29 @@ Numerous social links can be defined in the `social` section above with the foll
 
 Additional skill list used in the `additionalSkillList` section above with the following structure:
 
-| key    | type               | notes                                    |
-| ------ | ------------------ | ---------------------------------------- |
-| title  | string, required   | The title that describes this skill set. |
-| skills | string[], required | The array of skills.                     |
+| key    | type                                              | notes                                    |
+| ------ | ------------------------------------------------- | ---------------------------------------- |
+| title  | string, required                                  | The title that describes this skill set. |
+| skills | string[] or string[][] (see note below), required | The array of skills.                     |
+
+Note on skills structure: The skills property can be a simple array of strings, as well as an array of array strings, which allow for nested lists. For example, a skill list can be:
+
+```
+"skills": [
+  "Skill one",
+  "Skill two"
+]
+```
+
+or
+
+```
+"skills": [
+  "Skill one",
+  [
+    "Sub skill one",
+    "Sub skill two"
+  ],
+  "Skill two"
+]
+```
