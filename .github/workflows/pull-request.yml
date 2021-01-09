@@ -5,7 +5,8 @@ name: Tests for pull requests
 on:
   pull_request:
     branches:
-      - "*"
+      - "**" # matches every branch
+      - "!master" # but excludes master
 
 jobs:
   # This workflow contains a single job called "build"
