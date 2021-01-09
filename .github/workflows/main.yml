@@ -4,7 +4,7 @@ name: CD
 # events but only for the master branch
 on:
   push:
-    branches: [main, deploy]
+    branches: [main]
 
 jobs:
   # This workflow contains a single job called "build"
