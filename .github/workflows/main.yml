@@ -1,14 +1,11 @@
-# This is a basic workflow to help you get started with Actions
-
-name: CI
+name: CD
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
   build:
@@ -17,25 +14,24 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
 
-    # Runs a single command using the runners shell
-    - name: Install dependencies
-      run: yarn install
+      # Install dependencies
+      - name: Install dependencies
+        run: yarn install
 
-    # Runs a set of commands using the runners shell
-    - name: Build
-      run: yarn build
-      
-    - name: Archive build
-      run: zip -r build.zip build
+      # Build the React app
+      - name: Build
+        run: yarn build
 
-    - name: Create latest release
-      uses: marvinpinto/action-automatic-releases@master
-      with:
-        repo_token: "${{ secrets.GITHUB_TOKEN }}"
-        automatic_release_tag: "latest"
-        prerelease: true
-        title: "Latest development build"
-        files: build.zip
+      # Deploy to gh-pages
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: build # The folder the action should deploy.
+          CLEAN: true # Automatically remove deleted files from the deploy branch
