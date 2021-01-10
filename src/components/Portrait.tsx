@@ -8,7 +8,7 @@ const Portrait = (props: PortraitProps) => {
   return (
     <img
       className="img-fluid profile-pic"
-      src="images/me.png"
+      src={`${process.env.PUBLIC_URL}/images/me.png`}
       alt={props.name}
     />
   );
