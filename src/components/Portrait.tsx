@@ -8,7 +8,7 @@ const Portrait = (props: PortraitProps) => {
   return (
     <img
       className="img-fluid profile-pic"
-      src="images/me.jpg"
+      src="images/me.png"
       alt={props.name}
     />
   );
