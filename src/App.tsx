@@ -124,17 +124,6 @@ const App = () => {
               </TabularDetailLink>
             </TabularDetails>
             <Br className="d-lg-none" />
-          </Col>
-
-          <Col xs={12} lg={6}>
-            <Subtitle>Experience</Subtitle>
-            {config.experience.map((exp, i) => (
-              <Experience
-                key={i.toString()}
-                experience={exp}
-                noMargin={i === config.experience.length - 1}
-              />
-            ))}
             <Br />
 
             <Subtitle>Social</Subtitle>
@@ -151,6 +140,17 @@ const App = () => {
                 ))}
               </TabularDetails>
             )}
+          </Col>
+
+          <Col xs={12} lg={6}>
+            <Subtitle>Experience</Subtitle>
+            {config.experience.map((exp, i) => (
+              <Experience
+                key={i.toString()}
+                experience={exp}
+                noMargin={i === config.experience.length - 1}
+              />
+            ))}
           </Col>
           <Col xs={12}>
             <Br />
