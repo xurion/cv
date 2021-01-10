@@ -26,7 +26,7 @@ const Experience: FC<ExperienceProps> = (props) => {
         <Col xs="6">
           <div className="company-logo">
             <img
-              src={`images/${experience.companyLogo}`}
+              src={`${process.env.PUBLIC_URL}/images/${experience.companyLogo}`}
               alt={experience.companyName}
               title={experience.companyName}
             />
