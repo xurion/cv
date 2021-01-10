@@ -2,7 +2,6 @@
   "name": "cv",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://xurion.github.io/cv",
   "dependencies": {
     "bootstrap": "^4.4.1",
     "moment": "^2.24.0",
