@@ -1,168 +1,234 @@
 {
-  "forenames": "Dean",
-  "surname": "James",
-  "profession": "Front-end Software Engineer & Agile Solutions Architect",
-  "dob": "13th January 1981",
-  "gender": "Male",
+  "forenames": "Cara",
+  "surname": "Gifford-Pitcher",
+  "profession": "Quality Assurance Engineer for Software Development",
+  "dob": "30th November 1983",
+  "gender": "Female",
   "location": "Southend, Essex",
   "citizenship": "British",
-  "telephone": "07545 466331",
-  "email": "jobs@deanj.co.uk",
-  "cvUrl": "cv.deanj.co.uk",
+  "telephone": "07595429738",
+  "email": "caragp@gmail.com",
+  "cvUrl": "https://caragp.github.io/cv",
   "social": [
     {
-      "label": "Twitter",
-      "url": "https://twitter.com/leandeanjames",
-      "text": "@leandeanjames"
-    },
-    {
       "label": "LinkedIn",
-      "url": "https://www.linkedin.com/in/dean-james-74860014",
-      "text": "linkedin.com/in/dean-james-74860014"
+      "url": "https://www.linkedin.com/in/cara-gifford-pitcher-02577a22/",
+      "text": "linkedin.com/in/cara-gifford-pitcher-02577a22"
     }
   ],
-  "githubRibbon": {
-    "link": "https://github.com/xurion/cv",
-    "imageSrc": "https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png",
-    "imageAlt": "Fork me on GitHub"
-  },
   "introductions": [
-    "Hi! I'm Dean. I'm a passionate, customer-focused and quality-first front-end software engineer with a broad range of skills. I have more than ten years experience in delivering business and customer needs in an Agile way, as well as nurturing teams to become the best delivery-focused units they can. I pride myself on enabling and guiding evolution at the team level, consistently striving for a high standard of work, being good-natured, outgoing and having a good sense of humour."
+    "Over 13 years experience in the field of Quality Assurance. High level of attention to detail, adaptable, and with experience in Manual and Automation test approaches. Experienced with both Scrum and Agile methodologies and processes across multiple software development areas, including Mobile, Connected devices and Gaming Applications."
   ],
   "skills": [
-    "TypeScript, JavaScript, ES6, JSX",
-    "React, Redux",
-    "Jest, Enzyme, Jasmine, Chai",
-    "Styled Components",
+    "Jira",
+    "Browserstack",
+    "CharlesProxy",
+    "Postman",
+    "Burp",
+    "Ghost Inspector",
+    "Testrails",
+    "QTest",
+    "Visual Studio Code",
+    "IntelliJ",
+    "ADT Eclipse",
+    "XCode",
     "WebdriverIO",
-    "jQuery",
-    "CSS, LESS, SASS/SCSS",
-    "Node",
-    "Docker",
-    "Webpack",
-    "Yarn, NPM",
-    "Bootstrap, including SCSS integration",
-    "Photoshop",
-    "Symfony2",
-    "SOLID",
-    "Trunk based development",
-    "Monitoring, Datadog",
+    "Basics of Javascript test definitions",
+    "Cucumber",
+    "Behat",
+    "GitHub",
+    "Eggplant",
+    "Selenium IDE",
+    "SoapUI",
+    "Bamboo",
+    "Bitbucket",
+    "Octopus",
+    "Datadog",
+    "Sonic",
+    "Google Analytics",
+    "Storybook",
+    "Full Story",
     "Behaviour-driven development (BDD)",
     "Gherkin scenario writing/refining",
-    "Test-driven development (TDD)",
-    "Git, SVN"
+    "Test-driven development (TDD)"
   ],
   "complimentarySkills": [
-    "Lean Kanban expert.",
-    "Agile champion & coach.",
-    "Probabilistic forecaster over estimation.",
-    "Technical excellence & SOLID evangelist.",
-    "Gherkin scenario and BDD expert.",
-    "Quality-first focus.",
+    "Advocate for Lean Kanban approaches.",
+    "Advocate and strong supporter of Agile processes and mentality.",
+    "Drives for technical excellence & quality-first focus.",
+    "Advisor and guide for better Gherkin scenario writing and BDD implimentation.",
     "Advocate for team transparency.",
-    "Nurturer of safe-to-fail and psychologically safe cultures.",
-    "Analyser of all things measurable.",
     "Bridges the natural language gap between business and engineer.",
-    "Minimum viable product & time to market advisor."
+    "Drives for constantly improving processes.",
+    "Efficient learning ability for new tools, processes and frameworks.",
+    "Ability to manipulate data, automation, proxy tool and debugging code for a wide range of testing coverage."
   ],
   "me": [
-    "Front-end software has always been my core passion.",
-    "I'm a data-driven thinker and I use my strong Agile analytical and organisational skills to drive technically excellent and sustainable solutions that my team and I build."
+    "Driver for Quality over Quantity, who aims to change the way teams think about general quality and testing approaches.",
+    "Interested in joining a improvement driven team, where I can extend my knowledge and hands on experience implementing and maintaining automation suites, or train to be a Test Manager or Quality Consultant."
   ],
   "meReadMore": [
-    "I attend various Agile meetups in order to keep myself up to date with how other teams tackle real-world Lean delivery issues. Although I do reference a variety of reading material, meetups are my go-to source for on-the-ground techniques and advice.",
-    "I am able to work on my own, but I have almost always found that teamwork trumps all silo-based work.",
-    "I am lively, outgoing and approachable. I love playing video games (especially RPGs), developing software on pet projects (currently learning Lua!) and cooking in my new dream kitchen, having wanted to be a chef when I was younger (before I got my hands on a PC!).",
-    "I'm a fan of electronic house music and enjoy attending music festivals.",
-    "My person-to-person and written skills are excellent and I always try to bring enthusiasm and adaptability to my work."
+    "I have a broad understanding of both good and bad testing and development processes, and aim to always use previous experience to guide and constantly approve team approaches to software development.",
+    "I am able to work on my own, but I prefer working directly with developers, product, design, and all other elements in cross-fuctional teams.",
+    "I am approachable and easy to get on with; providing both a friendly ear and a sound board for ideas.",
+    "I see myself as artistic and creative, dabbling in oil painting and wire weaving crafts.",
+    "I can be quite stubborn about driving the mentality that Quality should be everyone's responsibily and passion, not just something left to the QA.",
+    "My communication skills are of a high standard; willing and able to converse with all levels and experiences."
   ],
   "experience": [
     {
-      "jobTitle": "Senior Front-End Software Engineer",
-      "companyName": "Tesco Technology",
-      "companyLogo": "tesco.png",
-      "startDate": 1599469200000,
+      "jobTitle": "QA Engineer",
+      "companyName": "Discovery Inc.",
+      "companyLogo": "discovery.png",
+      "startDate": "Oct 2020",
       "about": [
-        "Part of the team responsible for creating and maintaining various in-store till systems including self checkout. Tasked with creating an in-house solution that severed our dependency on a third party EPOS solution."
+        "Part of a team responsible for creating and maintaining Discovery's Connected/Smart TV devices software application, which allows users to watch various Discovery Channel content."
       ],
       "aboutReadMore": [
-        "EPOS systems are created using React, Redux, GraphQL and Node."
+        "Heavily manual role, conducting end-to-end testing across multiple pieces of hardware."
       ]
     },
     {
-      "jobTitle": "Senior Front-End Software Engineer",
+      "jobTitle": "Senior Test Engineer",
       "companyName": "Kobalt Music",
       "companyLogo": "kobalt.svg",
-      "startDate": 1544432400000,
-      "endDate": 1581094800000,
+      "startDate": "Feb 2018",
+      "endDate": "March 2020",
       "about": [
-        "Part of the team responsible for overseeing the rollout of a two-year front-end project, as well as other client-facing applications. Also maintained the internally-shared front-end component library."
+        "Part of various teams responsible for creating and maintaining some of the front-end, data-driven pages. Displaying useful streaming and media consumption statistics, as well as monetary earnings and spendature values."
       ],
       "aboutReadMore": [
-        "Technology primarily included TypeScript & React. Built and maintained BFFs for each of our front-end applications, maintained existing APIs and set up monitoring for server-side as well as instrumentation to monitor how our customers used our platform.",
-        "I was one of the main proponents in the adoption of behaviour-driven development. Also involved in pair programming and system design interviews."
-      ]
-    },
-    {
-      "jobTitle": "Team Lead",
-      "otherTitles": [
-        "Agile Delivery Manager",
-        "Senior Front-End Software Engineer"
-      ],
-      "companyName": "BrightTALK",
-      "companyLogo": "brighttalk.svg",
-      "startDate": 1301313600000,
-      "endDate": 1530532800000,
-      "about": [
-        "Responsible for leading the team working on the main client-facing Symfony2 and AngularJS website. My role focused on the development of our front-end as well as being an Agile servant-leader for the team."
-      ],
-      "aboutReadMore": [
-        "When the business changed direction away from their legacy products, I moved to a different team where I was required to plan the implementation of a completely new front-end stack, which included moving away from an old Backbone application with manual builds and no test coverage, to a React/Redux application (ES6) fully covered by Jest unit tests and automated Behaviour-driven scenarios, powered by Webpack, Yarn etc."
+        "Sole tester for cross-functional teams, covering and implementing evolving test processes; driving quality-first approaches.",
+        "Advisor for fellow QA Engineers, coaching and improving the more junior members confidence with BDD and quality driven development in their own respective teams."
       ],
       "additionalSkillList": {
-        "title": "Agile responsibilities included:",
+        "title": "Responsibilities included:",
         "skills": [
-          "Enable and coach the team to utilise Kanban to balance capacity against demand and prevent burnout.",
-          "Analyse team bottlenecks and adapt the team approach as required, using Little’s Law, queueing theory and the theory of constraints.",
-          "Track team delivery cadence with cycle times and lead times to identify issues early.",
-          "Facilitate team ceremonies and reduce feedback loops with face-to-face conversations.",
-          "Encourage a safe-to-fail culture for developers to thrive with psychological safety.",
-          "Protect the team from external interruption and unnecessary context switching.",
-          "Measure the cost of delay to reveal undeniable need for change.",
-          "Help the team define explicit policies for each stage of work in a team's process.",
-          "Radiate any and all information out in the open so the status of things is always evident to the team and stakeholders.",
-          "Coach the team to focus on customer needs as a priority, providing them the opportunity to help shape what a product looks like and offers.",
-          "Coach the team to ship minimum viable products to reduce both time to market and cost of delay.",
-          "Work with business people to introduce Gherkin scenarios in order for teams, developers and the business to speak the same consistent language before, during and after each project."
+          "Helped implement and maintain Acceptance/Functional automation test suites, covering both Frontend and Backend functionality, in Javascript and PHP.",
+          "Helped mentor fellow Engineers in the creation of BDD Scenarios using Gherkin syntax.",
+          "Studied and helped implement a Mutation Testing tool into a Web product, to automate monitoring of Code Coverage levels.",
+          "Helped create/update DOR/DOD documentation (Definition of Ready/Definition of Done).",
+          "One of the leading spokespeople for implementing a QA Engineer earlier in the development process.",
+          "One of the leading coordinators for evolving Jira, Development & Delivery processes.",
+          "Mentor and guide on matters of general testing best practices, and troubleshooting for fellow QA Engineers.",
+          "Presented and helped organise presentations and documentation on the following topics:",
+          "○ BDD best practices.",
+          "○ Double Diamond development process.",
+          "○ Mutation testing.",
+          "○ Testing best practices.",
+          "○ How to test Automation Scenarios and both Frontend and Backend functionality."
         ]
       }
     },
     {
-      "jobTitle": "Front-end Team Lead",
-      "companyName": "Bettor.com",
-      "formerCompanyName": "IbetX Ltd.",
-      "companyLogo": "bettor.png",
-      "startDate": 1207569600000,
-      "endDate": 1300449600000,
+      "jobTitle": "QA Analyst",
+      "companyName": "Stadion",
+      "companyLogo": "stadion.svg",
+      "startDate": "Sept 2017",
+      "endDate": "Dec 2017",
       "about": [
-        "Lead the front-end software development and graphic design team. Line managed one dedicated designer and one dedicated JavaScript, CSS and HTML engineer."
+        "Solo quality representative for a small startup company, which hosted various football websites."
       ],
       "aboutReadMore": [
-        "Heavily involved in a two-year website and brand overhaul, built in Zend framework, jQuery and WebSocket technology. Included payment gateways, real-time user-to-user betting interfaces, social networking tools and sports news feeds."
-      ]
+        "The company's first QA member. Hired to help mentor and guide the close-knit team approach to more quality driven development, and improve their test coverage."
+      ],
+      "additionalSkillList": {
+        "title": "Responsibilities included:",
+        "skills": [
+          "Created documentation and provided guidance on Jira tickets creation.",
+          "Mentored the team on BDD best practices.",
+          "Learned how to use Ghost Inspector to create Automated Regression suites for purely Frontend testing.",
+          "Investigated running Ghost Inspector test suites on deployment using Octopus Deploy build service.",
+          "Some experience with connecting Runscope API testing tool to a Ghost Inspector test suite.",
+          "Some experience using Sitecore and Umbrago content management systems."
+        ]
+      }
     },
     {
-      "jobTitle": "Software Engineer",
-      "otherTitles": ["Web Designer"],
-      "companyName": "SQ Digital",
-      "formerCompanyName": "SearchQuest UK Ltd.",
-      "companyLogo": "sq.svg",
-      "startDate": 1108987200000,
-      "endDate": 1207310400000,
+      "jobTitle": "QA Lead",
+      "companyName": "Brighttalk",
+      "companyLogo": "brighttalk.svg",
+      "startDate": "Sept 2014",
+      "endDate": "Sept 2017",
       "about": [
-        "Responsible for the majority of a large number of projects from beginning to end. Taking bespoke customer requirements, designing PhotoShop layouts (some including full branding), developing the PHP back-end and JS/HTML/CSS front-end, setting up hosting via IIS and Fasthosts, as well as customer support."
+        "Lead a small cross-region Testing Team (US, UK, Lithuania), covering testing for a Webinar service website."
       ],
-      "aboutReadMore": []
+      "aboutReadMore": [
+        "Looking after the QA team, organising, monitoring and providing end-to-end, regression testing and driving the implementation of automation testing."
+      ],
+      "additionalSkillList": {
+        "title": "Responsibilities included:",
+        "skills": [
+          "Wrote test documentation and test plans.",
+          "Some experience with using SoapUI API tool to create and run tests for microservices.",
+          "Some experience writing automated test cases in Java using Selenium Webdriver and IntelliJ.",
+          "Cross browser and Mobile testing.",
+          "Experienced with Agile, Kanban and Waterfall project cycles.",
+          "Worked directly with Developers and Product Managers.",
+          "Experienced with QTest test management tool.",
+          "Mentoring fellow QA.",
+          "Able to monitor Network and Console Logs."
+        ]
+      }
+    },
+    {
+      "jobTitle": "QA Lead",
+      "otherTitles": ["QA"],
+      "companyName": "Monitise Create",
+      "formerCompanyName": "Grapple",
+      "companyLogo": "Monitise.png",
+      "startDate": "Dec 2011",
+      "endDate": "Aug 2014",
+      "about": [
+        "Part of a versatile testing unit for a Mobile Application Agency, covering a range of different mobile platforms and application modals."
+      ],
+      "aboutReadMore": [
+        "Senior tester, responsible for leading test efforts and representative for outsourced projects. Helped drive change and testing culture within the business."
+      ],
+      "additionalSkillList": {
+        "title": "Responsibilities included:",
+        "skills": [
+          "Wrote and improved test documentation and test plans.",
+          "Experienced with the use of Charlesproxy to monitor and manipulate API calls between the app and server.",
+          "Experienced with the use of XCode and ADT Eclipse to obtain crash logs for both Android and iPhone devices.",
+          "Experienced with Window 8 devices and applications.",
+          "Experienced with Agile, Scrum and Waterfall project cycles.",
+          "Worked directly with Developers and Designers through project cycles.",
+          "Work on various Financial Services, in-built software, Shopping, and Sports applications.",
+          "Experienced with Jira and TestRail test management tool.",
+          "Mentoring other members of QA and the Development Team in the use of the various tools required for projects.",
+          "Some experience with Automation Testing using EggPlant and Selenium IDE frameworks."
+        ]
+      }
+    },
+    {
+      "jobTitle": "Junior Mastering Technician",
+      "otherTitles": ["Acting Project Manager, Senior QA, QA"],
+      "companyName": "SEGA Europe",
+      "companyLogo": "sega.png",
+      "startDate": "Apr 2007",
+      "endDate": "Dec 2011",
+      "about": [
+        "Covered various roles within the testing/quality department for a well established and long running games company."
+      ],
+      "aboutReadMore": [
+        "Evolved from simply testing games to organising testing responsibilites and daily coverage. Also monitoring and organising test management data between shifts and different business units. Then moved into hardware and software management, being involved with the software submissions and submission monitoring."
+      ],
+      "additionalSkillList": {
+        "title": "Responsibilities included:",
+        "skills": [
+          "Created test documentation.",
+          "Experienced with Planning and Project Scheduling.",
+          "Keeping a constant line of communication open with Leads and Line Managers.",
+          "Lead a small team working on Flash and Emulated titles on Sega’s online gaming website.",
+          "Learned API error debugging.",
+          "Tested a variety of games on the various different platforms around and popular at the time.",
+          "Sending and receiving code from Producers.",
+          "Created image files from raw product code.",
+          "Responsible for submitting Game Code to distributors for final evaluation and manufacturing approval.",
+          "Experienced with the maintenance of various consoles and their respective virtual console suites."
+        ]
+      }
     }
   ]
 }
