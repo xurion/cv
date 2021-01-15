@@ -18,7 +18,7 @@ This app has not been configured as a PWA. Some work can be done so it heads in 
 
 ### Accessibility: 97%
 
-Minor issue here where the headings for H4 are used instead of H3.
+Changed incorrect headings order for H3 and H4.
 
 ### SEO: 100%
 

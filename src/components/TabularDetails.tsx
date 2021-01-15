@@ -1,6 +1,10 @@
-import React, { FC } from "react";
+import React from "react";
 
-const TabularDetails: FC = (props) => {
+type TabularDetailsProps = {
+  children: React.ReactNode;
+};
+
+const TabularDetails = (props: TabularDetailsProps) => {
   return (
     <table className="tab-details">
       <tbody>{props.children}</tbody>
@@ -11,10 +15,11 @@ const TabularDetails: FC = (props) => {
 export default TabularDetails;
 
 type TabularDetailProps = {
+  children: React.ReactNode;
   label: string;
 };
 
-export const TabularDetail: FC<TabularDetailProps> = (props) => {
+export const TabularDetail = (props: TabularDetailProps) => {
   return (
     <tr key={`detail-${props.label}`}>
       <td className="label">{props.label}</td>
@@ -24,11 +29,12 @@ export const TabularDetail: FC<TabularDetailProps> = (props) => {
 };
 
 type TabularDetailLinkProps = {
+  children: React.ReactNode;
   label: string;
   url: string;
 };
 
-export const TabularDetailLink: FC<TabularDetailLinkProps> = (props) => {
+export const TabularDetailLink = (props: TabularDetailLinkProps) => {
   return (
     <tr>
       <td className="label">{props.label}</td>
