@@ -23,12 +23,6 @@ export type Experience = {
   };
 };
 
-type GithubRibbon = {
-  link: string;
-  imageSrc: string;
-  imageAlt: string;
-};
-
 export type Config = {
   forenames: string;
   surname: string;
@@ -41,7 +35,7 @@ export type Config = {
   email?: string;
   cvUrl: string;
   social: Social[];
-  githubRibbon?: GithubRibbon;
+  githubRibbonUrl?: string;
   introductions: string[];
   skills: string[];
   complimentarySkills?: string[];

@@ -16,7 +16,10 @@ This app has not been configured as a PWA. Some work can be done so it heads in 
 
 ### Best Practices: 92%
 
-There are two images that can be improved by regenerating the images at the right dimensions to support pixel ratio. THese images are the main profile picture and the Github fork ribbon. The ribbon specifically is hosted elsewhere, so if there is no larger image available, a larger version of this ribbon may need to be hosted as part of the app instead.
+Changes have been made to two images to support pixel ratio:
+
+1. The main profile picture - increased from 200px to 300px
+2. The Github ribbon - converted to pure css component
 
 ### Accessibility: 97%
 
