@@ -14,12 +14,7 @@ Another potential optimisation is flagged around the cache TTL on assets such as
 
 This app has not been configured as a PWA. Some work can be done so it heads in that direction.
 
-### Best Practices: 92%
-
-Changes have been made to two images to support pixel ratio:
-
-1. The main profile picture - increased from 200px to 300px
-2. The Github ribbon - converted to pure css component
+### Best Practices: 100%
 
 ### Accessibility: 97%
 
