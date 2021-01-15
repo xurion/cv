@@ -24,12 +24,8 @@ const App = () => {
     <>
       <BlockStrip />
       <Container>
-        {config.githubRibbon && (
-          <GithubRibbon
-            githubUrl={config.githubRibbon.link}
-            imgAlt={config.githubRibbon.imageAlt}
-            imgSrc={config.githubRibbon.imageSrc}
-          />
+        {config.githubRibbonUrl && (
+          <GithubRibbon url={config.githubRibbonUrl} />
         )}
         <Row>
           <Col xs={12} sm={8} md={9} lg={10}>
