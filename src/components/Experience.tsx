@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import { Row, Col } from "reactstrap";
 import Moment from "react-moment";
 import { Experience as _Experience } from "../types";
@@ -10,7 +10,7 @@ type ExperienceProps = {
   noMargin?: boolean;
 };
 
-const Experience: FC<ExperienceProps> = (props) => {
+const Experience = (props: ExperienceProps) => {
   let classNames = "experience";
   const { experience, noMargin } = props;
   classNames = noMargin ? `${classNames} last` : classNames;
@@ -19,7 +19,7 @@ const Experience: FC<ExperienceProps> = (props) => {
     <div className={classNames}>
       <Row>
         <Col>
-          <h4 className="job-title text-center">{experience.jobTitle}</h4>
+          <h3 className="job-title text-center">{experience.jobTitle}</h3>
         </Col>
       </Row>
       <Row className="justify-content-center">

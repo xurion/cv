@@ -1,7 +1,11 @@
-import React, { FC, useState } from "react";
+import React, { useState } from "react";
 import { Button } from "reactstrap";
 
-const ReadMore: FC = (props) => {
+type ReadMoreProps = {
+  children: React.ReactNode;
+};
+
+const ReadMore = (props: ReadMoreProps) => {
   const [show, setShow] = useState(false);
 
   return show ? (

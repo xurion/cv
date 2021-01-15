@@ -1,6 +1,9 @@
-import React, { FC } from "react";
+import React from "react";
 
-const Subtitle: FC = (props) => {
+type SubtitleProps = {
+  children: React.ReactNode;
+};
+const Subtitle = (props: SubtitleProps) => {
   return (
     <>
       <h2 className="subtitle-text text-center">{props.children}</h2>
