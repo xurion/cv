@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 type GithubRibbonProps = {
-  githubUrl: string;
+  url: string;
 };
 
 const GithubRibbonContainer = styled.div`
@@ -56,9 +56,7 @@ const GithubRibbonLink = styled.a`
 const GithubRibbon = (props: GithubRibbonProps) => {
   return (
     <GithubRibbonContainer>
-      <GithubRibbonLink href={props.githubUrl}>
-        Fork me on GitHub
-      </GithubRibbonLink>
+      <GithubRibbonLink href={props.url}>Fork me on GitHub</GithubRibbonLink>
     </GithubRibbonContainer>
   );
 };
