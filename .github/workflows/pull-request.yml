@@ -9,7 +9,25 @@ on:
       - "!master" # but excludes master
 
 jobs:
-  # This workflow contains a single job called "build"
+  lighthouse-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: yarn install
+      - name: Run Lighthouse
+        uses: foo-software/lighthouse-check-action@master
+        id: lighthouseCheck
+        with:
+          urls: "https://xurion.github.io/cv"
+      - name: Handle Lighthouse Check results
+        uses: foo-software/lighthouse-check-status-action@master
+        with:
+          lighthouseCheckResults: ${{ steps.lighthouseCheck.outputs.lighthouseCheckResults }}
+          minAccessibilityScore: "90"
+          minBestPracticesScore: "90"
+          minPerformanceScore: "90"
+          minSeoScore: "90"
+
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
