@@ -19,8 +19,7 @@ jobs:
         run: yarn install
 
       - name: Build & serve locally
-        run: yarn build
-        run: (yarn serve&)
+        run: yarn build && (yarn serve&)
 
       - name: Run Lighthouse
         uses: foo-software/lighthouse-check-action@master
