@@ -33,7 +33,6 @@ export type Config = {
   citizenship: string;
   telephone?: string;
   email?: string;
-  cvUrl: string;
   social: Social[];
   githubRibbonUrl?: string;
   introductions: string[];

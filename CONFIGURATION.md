@@ -4,30 +4,29 @@ All CV information is stored in [src/config.json](src/config.json). This documen
 
 ## Personal Information
 
-| key                 | type                                  | notes                                                                                       |
-| ------------------- | ------------------------------------- | ------------------------------------------------------------------------------------------- |
-| forenames           | string, required                      | One or more of your first names.                                                            |
-| surname             | string, required                      | Your surname.                                                                               |
-| profession          | string, required                      | How you would describe your profession or expertise.                                        |
-| dob                 | string, optional                      | You date of birth.                                                                          |
-| gender              | string, optional                      | Your gender.                                                                                |
-| location            | string, required                      | Where you are located.                                                                      |
-| citizenship         | string, required                      | Your citizenship.                                                                           |
-| telephone           | string, optional                      | Your telephone number. A string so you can freely format the number.                        |
-| email               | string, optional                      | Your email address.                                                                         |
-| cvUrl               | string, required                      | The URL where this CV will be located.                                                      |
-| social              | [Social](#Social)[], required         | An array of social links, such as LinkedIn.                                                 |
-| githubRibbonUrl     | string, optional                      | Displays a Github ribbon motif with the given link to your source code.                     |
-| introductions       | string[], required                    | An array of paragraphs that introduce you as a potential employee.                          |
-| skills              | string[], required                    | An array of your core skills.                                                               |
-| complimentarySkills | string[], optional                    | Additional non-core skills you bring to the table.                                          |
-| me                  | string[], required                    | About you as a person. Can be slightly less formal compared to the `introductions` section. |
-| meReadMore          | string[], optional                    | Additional information about you as a person that is hidden by a "Read More" button.        |
-| experience          | [Experience](#Experience)[], required | An array of work experience information.                                                    |
+| key                 | type                                  | notes                                                                                                         |
+| ------------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| forenames           | string, required                      | One or more of your first names.                                                                              |
+| surname             | string, required                      | Your surname.                                                                                                 |
+| profession          | string, required                      | How you would describe your profession or expertise.                                                          |
+| dob                 | string, optional                      | You date of birth.                                                                                            |
+| gender              | string, optional                      | Your gender.                                                                                                  |
+| location            | string, required                      | Where you are located.                                                                                        |
+| citizenship         | string, required                      | Your citizenship.                                                                                             |
+| telephone           | string, optional                      | Your telephone number. A string so you can freely format the number.                                          |
+| email               | string, optional                      | Your email address. This does not render as a link because viewers rarely will use this to generate an email. |
+| social              | [Social](#Social)[], required         | An array of social links, such as LinkedIn.                                                                   |
+| githubRibbonUrl     | string, optional                      | Displays a Github ribbon motif with the given link to your source code.                                       |
+| introductions       | string[], required                    | An array of paragraphs that introduce you as a potential employee.                                            |
+| skills              | string[], required                    | An array of your core skills.                                                                                 |
+| complimentarySkills | string[], optional                    | Additional non-core skills you bring to the table.                                                            |
+| me                  | string[], required                    | About you as a person. Can be slightly less formal compared to the `introductions` section.                   |
+| meReadMore          | string[], optional                    | Additional information about you as a person that is hidden by a "Read More" button.                          |
+| experience          | [Experience](#Experience)[], required | An array of work experience information.                                                                      |
 
 ## Social
 
-Numerous social links can be defined in the `social` section above with the following structure:
+Multiple social links can be defined in the `social` section above with the following structure:
 
 | key   | type             | notes                                                    |
 | ----- | ---------------- | -------------------------------------------------------- |

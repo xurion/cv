@@ -2,11 +2,12 @@ import React from "react";
 
 type TabularDetailsProps = {
   children: React.ReactNode;
+  links?: boolean;
 };
 
 const TabularDetails = (props: TabularDetailsProps) => {
   return (
-    <table className="tab-details">
+    <table className={`tab-details${props.links ? " tab-links" : ""}`}>
       <tbody>{props.children}</tbody>
     </table>
   );

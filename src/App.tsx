@@ -111,13 +111,8 @@ const App = () => {
                 </TabularDetail>
               )}
               {config.email && (
-                <TabularDetailLink label="Email" url={`mailto:${config.email}`}>
-                  {config.email}
-                </TabularDetailLink>
+                <TabularDetail label="Email">{config.email}</TabularDetail>
               )}
-              <TabularDetailLink label="CV" url={config.cvUrl}>
-                {config.cvUrl}
-              </TabularDetailLink>
             </TabularDetails>
             <Br className="d-lg-none" />
           </Col>
@@ -135,7 +130,7 @@ const App = () => {
 
             <Subtitle>Social</Subtitle>
             {config.social && (
-              <TabularDetails>
+              <TabularDetails links>
                 {config.social.map((social, i) => (
                   <TabularDetailLink
                     key={i.toString()}

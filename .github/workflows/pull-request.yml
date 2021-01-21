@@ -9,22 +9,32 @@ on:
       - "!master" # but excludes master
 
 jobs:
-  lighthouse:
+  lighthouse-check:
     runs-on: ubuntu-latest
     steps:
+      # checkout the repo
       - uses: actions/checkout@v2
 
       - name: Install dependencies
         run: yarn install
 
-      - name: Build
-        run: yarn build
+      - name: Build for Lighthouse & serve locally
+        run: PUBLIC_URL=/ yarn build && (yarn serve&)
 
-      - name: Run Lighthouse against build dir
-        uses: treosh/lighthouse-ci-action@v3
+      - name: Run Lighthouse
+        uses: foo-software/lighthouse-check-action@master
+        id: lighthouseCheck
         with:
-          # no urls needed - the rc file contains the build dir
-          configPath: "./lighthouserc.json"
+          urls: "http://127.0.0.1:5000"
+          emulatedFormFactor: "all"
+      - name: Handle Lighthouse Check results
+        uses: foo-software/lighthouse-check-status-action@master
+        with:
+          lighthouseCheckResults: ${{ steps.lighthouseCheck.outputs.lighthouseCheckResults }}
+          minAccessibilityScore: "90"
+          minBestPracticesScore: "90"
+          minPerformanceScore: "90"
+          minSeoScore: "90"
 
   build:
     # The type of runner that the job will run on
