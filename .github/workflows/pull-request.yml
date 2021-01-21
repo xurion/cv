@@ -20,6 +20,9 @@ jobs:
 
       - name: Build & serve locally
         run: yarn build && (yarn serve&)
+        
+      - name: Verify the local serve is running
+        run: curl 127.0.0.1:5000
 
       - name: Run Lighthouse
         uses: foo-software/lighthouse-check-action@master
