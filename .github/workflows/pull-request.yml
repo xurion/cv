@@ -9,32 +9,19 @@ on:
       - "!master" # but excludes master
 
 jobs:
-  lighthouse-check:
+  lighthouse:
     runs-on: ubuntu-latest
     steps:
-      # checkout the repo
       - uses: actions/checkout@v2
 
-      - name: Install dependencies
-        run: yarn install
+      - name: Build
+        run: yarn build
 
-      - name: Build & serve locally
-        run: yarn build && (yarn serve&)
-
-      - name: Run Lighthouse
-        uses: foo-software/lighthouse-check-action@master
-        id: lighthouseCheck
+      - name: Run Lighthouse against build dir
+        uses: treosh/lighthouse-ci-action@v3
         with:
-          urls: "https://xurion.github.io/cv,http://localhost:5000"
-          emulatedFormFactor: "all"
-      - name: Handle Lighthouse Check results
-        uses: foo-software/lighthouse-check-status-action@master
-        with:
-          lighthouseCheckResults: ${{ steps.lighthouseCheck.outputs.lighthouseCheckResults }}
-          minAccessibilityScore: "90"
-          minBestPracticesScore: "90"
-          minPerformanceScore: "90"
-          minSeoScore: "90"
+          # no urls needed - the rc file contains the build dir
+          configPath: "./lighthouserc.json"
 
   build:
     # The type of runner that the job will run on
