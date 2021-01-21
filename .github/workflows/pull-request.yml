@@ -28,7 +28,7 @@ jobs:
         uses: foo-software/lighthouse-check-action@master
         id: lighthouseCheck
         with:
-          urls: "https://xurion.github.io/cv,http://localhost:5000"
+          urls: "http://127.0.0.1:5000"
           emulatedFormFactor: "all"
       - name: Handle Lighthouse Check results
         uses: foo-software/lighthouse-check-status-action@master
