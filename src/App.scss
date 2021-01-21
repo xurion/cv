@@ -101,12 +101,26 @@ p {
   .label {
     font-weight: bold;
     padding-right: 20px;
-    vertical-align: top;
+    vertical-align: middle;
+  }
+}
+
+.tab-links {
+  .label {
+    vertical-align: middle;
+  }
+  .detail a {
+    display: inline-block;
+    padding: 12px 0; // Excess padding to satisfy Lighthouse tap area
   }
 }
 
 @include media-breakpoint-up(lg) {
   .profile-pic {
     width: 60%;
+  }
+
+  .tab-links .detail a {
+    padding: 0;
   }
 }

@@ -9,20 +9,29 @@ on:
       - "!master" # but excludes master
 
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  lighthouse-check:
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      # checkout the repo
       - uses: actions/checkout@v2
 
-      # Install dependencies
       - name: Install dependencies
         run: yarn install
 
-      # Build the React app
-      - name: Build
-        run: yarn build
+      - name: Build for Lighthouse & serve locally
+        run: PUBLIC_URL=/ yarn build && (yarn serve&)
+
+      - name: Run Lighthouse
+        uses: foo-software/lighthouse-check-action@master
+        id: lighthouseCheck
+        with:
+          urls: "http://127.0.0.1:5000"
+          emulatedFormFactor: "all"
+      - name: Handle Lighthouse Check results
+        uses: foo-software/lighthouse-check-status-action@master
+        with:
+          lighthouseCheckResults: ${{ steps.lighthouseCheck.outputs.lighthouseCheckResults }}
+          minAccessibilityScore: "90"
+          minBestPracticesScore: "90"
+          minPerformanceScore: "90"
+          minSeoScore: "90"

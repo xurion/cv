@@ -6,9 +6,7 @@
   "gender": "Male",
   "location": "Southend, Essex",
   "citizenship": "British",
-  "telephone": "07545 466331",
   "email": "jobs@deanj.co.uk",
-  "cvUrl": "cv.deanj.co.uk",
   "social": [
     {
       "label": "Twitter",
@@ -19,6 +17,11 @@
       "label": "LinkedIn",
       "url": "https://www.linkedin.com/in/dean-james-74860014",
       "text": "linkedin.com/in/dean-james-74860014"
+    },
+    {
+      "label": "CV",
+      "url": "http://cv.deanj.co.uk",
+      "text": "cv.deanj.co.uk"
     }
   ],
   "githubRibbonUrl": "https://github.com/xurion/cv",
@@ -42,7 +45,7 @@
     "Symfony2",
     "SOLID",
     "Trunk based development",
-    "Monitoring, Datadog",
+    "Monitoring, Datadog, Splunk",
     "Behaviour-driven development (BDD)",
     "Gherkin scenario writing/refining",
     "Test-driven development (TDD)",
