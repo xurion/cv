@@ -1,7 +1,7 @@
 {
   "forenames": "Dean",
   "surname": "James",
-  "profession": "Front-end Software Engineer & Agile Solutions Architect",
+  "profession": "Agile Software Engineer focusing on Quality Assurance",
   "dob": "13th January 1981",
   "gender": "Male",
   "location": "Southend, Essex",
@@ -26,54 +26,48 @@
   ],
   "githubRibbonUrl": "https://github.com/xurion/cv",
   "introductions": [
-    "Hi! I'm Dean. I'm a passionate, customer-focused and quality-first front-end software engineer with a broad range of skills. I have more than ten years experience in delivering business and customer needs in an Agile way, as well as nurturing teams to become the best delivery-focused units they can. I pride myself on enabling and guiding evolution at the team level, consistently striving for a high standard of work, being good-natured, outgoing and having a good sense of humour."
+    "Hi! I'm Dean. I'm a passionate, quality-first and customer-focused software engineer focusing on quality assurance practices. I have more than fifteen years experience in delivering business and customer needs in an Agile way, as well as nurturing teams to become the best delivery-focused units they can. I pride myself on enabling and guiding evolution at the team level, consistently striving for a high standard of work, being good-natured, outgoing and having a good sense of humour."
   ],
   "skills": [
     "TypeScript, JavaScript, ES6, JSX",
-    "React, Redux",
     "Jest, Enzyme, Jasmine, Chai",
-    "Styled Components",
     "WebdriverIO",
+    "Cypress",
+    "Behaviour-driven development (BDD)",
+    "Gherkin scenario writing/refining",
+    "Test-driven development (TDD)",
+    "React, Redux",
+    "Styled Components",
     "jQuery",
     "CSS, LESS, SASS/SCSS",
     "Node",
     "Docker",
-    "Webpack",
     "Yarn, NPM",
-    "Bootstrap, including SCSS integration",
     "Photoshop",
-    "Symfony2",
-    "SOLID",
+    "SOLID principles",
     "Trunk based development",
-    "Monitoring, Datadog, Splunk",
-    "Behaviour-driven development (BDD)",
-    "Gherkin scenario writing/refining",
-    "Test-driven development (TDD)",
-    "Git, SVN"
+    "Monitoring, Datadog, Splunk"
   ],
   "complimentarySkills": [
-    "Lean Kanban expert.",
-    "Agile champion & coach.",
-    "Probabilistic forecaster over estimation.",
-    "Technical excellence & SOLID evangelist.",
-    "Gherkin scenario and BDD expert.",
-    "Quality-first focus.",
-    "Advocate for team transparency.",
-    "Nurturer of safe-to-fail and psychologically safe cultures.",
-    "Analyser of all things measurable.",
-    "Bridges the natural language gap between business and engineer.",
-    "Minimum viable product & time to market advisor."
+    "Gherkin scenario and BDD expert",
+    "Lean Kanban consultant",
+    "Probabilistic forecaster over estimation",
+    "Technical excellence evangelist",
+    "Quality-first focus",
+    "Advocate for team transparency",
+    "Nurturer of safe-to-fail and psychologically safe cultures",
+    "Analyser of all things measurable",
+    "Minimum viable product & time to market advisor"
   ],
   "me": [
-    "Front-end software has always been my core passion.",
-    "I'm a data-driven thinker and I use my strong Agile analytical and organisational skills to drive technically excellent and sustainable solutions that my team and I build."
+    "Software engineering has always been one of my core passions.",
+    "For the past decade I have focused heavily on the sustainable creation of test-validated software at a rapid pace. I'm a data-driven thinker and I use my strong Agile analytical and organisational skills to drive technically excellent and sustainable solutions that my team and I build."
   ],
   "meReadMore": [
-    "I attend various Agile meetups in order to keep myself up to date with how other teams tackle real-world Lean delivery issues. Although I do reference a variety of reading material, meetups are my go-to source for on-the-ground techniques and advice.",
     "I am able to work on my own, but I have almost always found that teamwork trumps all silo-based work.",
-    "I am lively, outgoing and approachable. I love playing video games (especially RPGs), developing software on pet projects (currently learning Lua!) and cooking in my new dream kitchen, having wanted to be a chef when I was younger (before I got my hands on a PC!).",
-    "I'm a fan of electronic house music and enjoy attending music festivals.",
-    "My person-to-person and written skills are excellent and I always try to bring enthusiasm and adaptability to my work."
+    "I am lively, outgoing and approachable. I love playing video games (especially RPGs), developing software on pet projects (currently learning Lua!) and cooking in my custom-built kitchen, having wanted to be a chef when I was younger (before I got my hands on a PC!).",
+    "I'm a fan of electronic music and enjoy attending music festivals.",
+    "My person-to-person and written skills are excellent and I always try to approach my work with enthusiasm and adaptability."
   ],
   "experience": [
     {
@@ -85,7 +79,7 @@
         "Part of the team responsible for creating and maintaining various in-store till systems including self checkout. Tasked with creating an in-house solution that severed our dependency on a third party EPOS solution."
       ],
       "aboutReadMore": [
-        "EPOS systems are created using React, Redux, GraphQL and Node."
+        "EPOS systems are created using React, Redux, GraphQL and Node. "
       ]
     },
     {
