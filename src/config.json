@@ -26,7 +26,8 @@
   ],
   "githubRibbonUrl": "https://github.com/xurion/cv",
   "introductions": [
-    "Hi! I'm Dean. I'm a passionate, customer-focused and quality-first software engineer & quality assurance consultant with a broad range of skills. I have more than fifteen years experience in delivering business and customer needs in a quality-driven Agile way, as well as nurturing teams to become the best delivery-focused units they can be. I pride myself on enabling and guiding evolution at the team level, consistently striving for a high standard of work, being good-natured, outgoing and having a good sense of humour."
+    "Hi! I'm Dean. I'm a passionate, customer-focused and quality-first software engineer & quality assurance consultant with a broad range of skills. I have more than fifteen years experience in delivering business and customer needs in a quality-driven Agile way, as well as nurturing teams to become the best delivery-focused units they can be.",
+    "I pride myself on enabling and guiding evolution at the team level, consistently striving for a high standard of work, being good-natured, outgoing and having a good sense of humour."
   ],
   "skills": [
     "TypeScript, JavaScript, ES6, JSX",
