@@ -1,7 +1,7 @@
 {
   "forenames": "Dean",
   "surname": "James",
-  "profession": "Agile Software Engineer focusing on Quality Assurance",
+  "profession": "Agile Software Engineer & Quality Assurance Consultant",
   "dob": "13th January 1981",
   "gender": "Male",
   "location": "Southend, Essex",
@@ -26,18 +26,20 @@
   ],
   "githubRibbonUrl": "https://github.com/xurion/cv",
   "introductions": [
-    "Hi! I'm Dean. I'm a passionate, quality-first and customer-focused software engineer focusing on quality assurance practices. I have more than fifteen years experience in delivering business and customer needs in an Agile way, as well as nurturing teams to become the best delivery-focused units they can. I pride myself on enabling and guiding evolution at the team level, consistently striving for a high standard of work, being good-natured, outgoing and having a good sense of humour."
+    "Hi! I'm Dean. I'm a passionate, customer-focused and quality-first software engineer & quality assurance consultant with a broad range of skills. I have more than fifteen years experience in delivering business and customer needs in a quality-driven Agile way, as well as nurturing teams to become the best delivery-focused units they can be. I pride myself on enabling and guiding evolution at the team level, consistently striving for a high standard of work, being good-natured, outgoing and having a good sense of humour."
   ],
   "skills": [
     "TypeScript, JavaScript, ES6, JSX",
     "Jest, Enzyme, Jasmine, Chai",
-    "WebdriverIO",
-    "Cypress",
     "Behaviour-driven development (BDD)",
-    "Gherkin scenario writing/refining",
     "Test-driven development (TDD)",
+    "WebdriverIO",
+    "Cucumber",
+    "Gherkin",
+    "Continuous integration & deployment",
     "React, Redux",
     "Styled Components",
+    "Automated accessibility health",
     "jQuery",
     "CSS, LESS, SASS/SCSS",
     "Node",
@@ -71,29 +73,30 @@
   ],
   "experience": [
     {
-      "jobTitle": "Senior Front-End Software Engineer",
+      "jobTitle": "Senior Software Development Engineer III",
       "companyName": "Tesco Technology",
       "companyLogo": "tesco.png",
       "startDate": 1599469200000,
       "about": [
-        "Part of the team responsible for creating and maintaining various in-store till systems including self checkout. Tasked with creating an in-house solution that severed our dependency on a third party EPOS solution."
+        "Joined the programme tasked with creating and maintaining various in-store till systems including self checkout. This in-house project severed a dependency on a third party EPOS solution."
       ],
       "aboutReadMore": [
-        "EPOS systems are created using React, Redux, GraphQL and Node. "
+        "Systems are created using React, Redux, GraphQL & Node, and contain a high level of unit test coverage using Jest, as well as a thorough end-to-end test setup utilising Cypress."
       ]
     },
     {
-      "jobTitle": "Senior Front-End Software Engineer",
+      "jobTitle": "Senior Software Development Engineer III",
       "companyName": "Kobalt Music",
       "companyLogo": "kobalt.svg",
       "startDate": 1544432400000,
       "endDate": 1581094800000,
       "about": [
-        "Part of the team responsible for overseeing the rollout of a two-year front-end project, as well as other client-facing applications. Also maintained the internally-shared front-end component library."
+        "Part of a team responsible for overseeing the rollout of a two-year front-end project, as well as other client-facing applications, including the shared company front-end component library."
       ],
       "aboutReadMore": [
-        "Technology primarily included TypeScript & React. Built and maintained BFFs for each of our front-end applications, maintained existing APIs and set up monitoring for server-side as well as instrumentation to monitor how our customers used our platform.",
-        "I was one of the main proponents in the adoption of behaviour-driven development. Also involved in pair programming and system design interviews."
+        "Championed the adoption of behaviour-driven development and transformed the entire work planning approach to be customer-focused with the aid of Gherkin scenarios.",
+        "Technology primarily included TypeScript, React and Redux. Built and maintained BFFs for each of our front-end applications, maintained existing APIs and set up monitoring for server-side as well as instrumentation to monitor how our customers used our platform.",
+        "Also lead a number of pair programming and system design interviews."
       ]
     },
     {
@@ -107,10 +110,10 @@
       "startDate": 1301313600000,
       "endDate": 1530532800000,
       "about": [
-        "Responsible for leading the team working on the main client-facing Symfony2 and AngularJS website. My role focused on the development of our front-end as well as being an Agile servant-leader for the team."
+        "Lead the team that created BrightTALK's main client-facing Symfony2 and AngularJS stack. My role focused on the development of our front-end as well as being an Agile servant-leader for the team and delivering scalable test-covered solutions."
       ],
       "aboutReadMore": [
-        "When the business changed direction away from their legacy products, I moved to a different team where I was required to plan the implementation of a completely new front-end stack, which included moving away from an old Backbone application with manual builds and no test coverage, to a React/Redux application (ES6) fully covered by Jest unit tests and automated Behaviour-driven scenarios, powered by Webpack, Yarn etc."
+        "Retired various legacy products and was required to plan and implement new front-end stacks, which included moving away from old Backbone applications with manual builds and no test coverage, to modern React/Redux applications fully covered by Jest unit tests and automated Behaviour-driven Gherkin scenarios using WebdriverIO."
       ],
       "additionalSkillList": {
         "title": "Agile responsibilities included:",
