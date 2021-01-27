@@ -7,9 +7,12 @@ type GithubRibbonProps = {
 
 const GithubRibbonContainer = styled.div`
   display: block;
+  height: 135px;
+  overflow: hidden;
   position: absolute;
   right: 0;
   top: 0;
+  width: 135px;
   z-index: 9999;
 `;
 
@@ -17,17 +20,18 @@ const GithubRibbonLink = styled.a`
   background: #666;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
   color: #fff;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: bold;
-  padding: 5px 40px;
+  line-height: 15px;
+  padding: 4px 0;
   position: absolute;
-  right: -70px;
+  right: -50px;
   text-align: center;
   text-decoration: none;
-  top: 50px;
+  top: 40px;
   transform: rotate(45deg);
   transition: 0.5s;
-  width: 275px;
+  width: 200px;
 
   &:hover {
     background: #777;

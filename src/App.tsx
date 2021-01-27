@@ -15,6 +15,7 @@ import Portrait from "./components/Portrait";
 import GithubRibbon from "./components/GithubRibbon";
 import getConfig from "./Config";
 import BlockStrip from "./components/BlockStrip";
+import Meta from "./components/Meta";
 
 const config = getConfig();
 
@@ -22,6 +23,7 @@ const App = () => {
   const fullName = `${config.forenames} ${config.surname}`;
   return (
     <>
+      <Meta title={`${fullName} - ${config.profession}`} />
       <BlockStrip />
       <Container>
         {config.githubRibbonUrl && (
