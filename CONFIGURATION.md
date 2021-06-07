@@ -9,7 +9,7 @@ All CV information is stored in [src/config.json](src/config.json). This documen
 | forenames           | string, required                      | One or more of your first names.                                                                              |
 | surname             | string, required                      | Your surname.                                                                                                 |
 | profession          | string, required                      | How you would describe your profession or expertise.                                                          |
-| dob                 | string, optional                      | You date of birth.                                                                                            |
+| dob                 | string, optional                      | Your date of birth.                                                                                            |
 | gender              | string, optional                      | Your gender.                                                                                                  |
 | location            | string, required                      | Where you are located.                                                                                        |
 | citizenship         | string, required                      | Your citizenship.                                                                                             |
