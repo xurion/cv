@@ -1,7 +1,7 @@
 {
   "forenames": "Dean",
   "surname": "James",
-  "profession": "Agile Software Engineer & Quality Assurance Consultant",
+  "profession": "Agile Software Engineer & Quality Engineering Consultant",
   "dob": "13th January 1981",
   "gender": "Male",
   "location": "Southend, Essex",
@@ -79,10 +79,12 @@
       "companyLogo": "tesco.png",
       "startDate": 1599469200000,
       "about": [
-        "Joined the programme tasked with creating and maintaining various in-store till systems including self checkout. This in-house project severed a dependency on a third party EPOS solution."
+        "Tasked with creating and maintaining various in-store till systems, including self checkout and attended tills whilst supporting the continuous rollout and stability via a housekeeping initiative.",
+        "New till systems were rolled out to over 7,000 tills running in nearly 1,700 stores across the UK. These systems severed a dependency on a third party EPOS solution."
       ],
       "aboutReadMore": [
-        "Systems are created using React, Redux, GraphQL & Node, and contain a high level of unit test coverage using Jest, as well as a thorough end-to-end test setup utilising Cypress."
+        "A high level of unit test coverage is in place using Jest, as well as an end-to-end test setup utilising Cypress. I was responsible to converting the original Cypress suite into a Cucumber Gherkin syntax suite for ease of use and increase in productivity.",
+        "Systems are written in TypeScript using React, Redux, GraphQL, Node & Docker built using Azure Pipelines."
       ]
     },
     {
