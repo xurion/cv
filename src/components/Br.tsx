@@ -1,14 +1,14 @@
-import React from "react";
+import styled from "styled-components";
+import { colours, sectionSpacing } from "../Theme";
 
-type BrProps = {
-  className?: string;
-};
+type Props = {};
 
-const Br = (props: BrProps) => {
-  let className = "br";
-  className = props.className ? `${className} ${props.className}` : className;
-
-  return <br className={className} />;
-};
+const Br = styled.br<Props>`
+  background: ${colours.secondary};
+  content: " ";
+  display: block;
+  height: 2px;
+  margin: ${sectionSpacing} 0;
+`;
 
 export default Br;

@@ -1,16 +1,35 @@
-import React from "react";
 import { Row, Col } from "reactstrap";
 import Moment from "react-moment";
 import { Experience as _Experience } from "../types";
 import ReadMore from "./ReadMore";
 import TitledList from "./TitledList";
+import styled from "styled-components";
+import { colours } from "../Theme";
+import hexRgb from "hex-rgb";
 
 type ExperienceProps = {
   experience: _Experience;
   noMargin?: boolean;
 };
 
+const StyledH3 = styled.h3`
+  margin-bottom: 0;
+`;
+
 const Experience = (props: ExperienceProps) => {
+  const primaryRgb = hexRgb(colours.primary);
+  const CompanyLogoContainer = styled.div`
+    border: 1px solid
+      rgba(${primaryRgb.red}, ${primaryRgb.green}, ${primaryRgb.blue}, 0.25);
+    margin: 8px 0;
+    padding: 5px 7px;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  `;
+
   let classNames = "experience";
   const { experience, noMargin } = props;
   classNames = noMargin ? `${classNames} last` : classNames;
@@ -19,18 +38,18 @@ const Experience = (props: ExperienceProps) => {
     <div className={classNames}>
       <Row>
         <Col>
-          <h3 className="job-title text-center">{experience.jobTitle}</h3>
+          <StyledH3 className="text-center">{experience.jobTitle}</StyledH3>
         </Col>
       </Row>
       <Row className="justify-content-center">
         <Col xs="6">
-          <div className="company-logo">
+          <CompanyLogoContainer>
             <img
               src={`${process.env.PUBLIC_URL}/images/${experience.companyLogo}`}
               alt={experience.companyName}
               title={experience.companyName}
             />
-          </div>
+          </CompanyLogoContainer>
         </Col>
       </Row>
       <Row>

@@ -33,58 +33,6 @@ p {
   text-align: justify;
 }
 
-.br {
-  background: $secondary;
-  content: " ";
-  display: block;
-  height: 2px;
-  margin: $section-spacing 0;
-}
-
-.profile-pic {
-  border-radius: 50%;
-  filter: grayscale(100%);
-  margin-bottom: 10px;
-  transition: 1s;
-  width: 100%;
-
-  &:hover {
-    filter: none;
-  }
-}
-
-.subtitle-text {
-  margin-bottom: 0;
-}
-
-.subtitle-base {
-  color: $secondary;
-  font-size: $h2-font-size;
-  line-height: 0.5;
-  margin-bottom: $headings-margin-bottom;
-  opacity: 0.25;
-  text-align: center;
-
-  &::before {
-    content: "~";
-  }
-}
-
-.job-title {
-  margin-bottom: 0;
-}
-
-.company-logo {
-  border: 1px solid rgba($primary, 0.25);
-  margin: 8px 0;
-  padding: 5px 7px;
-
-  img {
-    display: block;
-    width: 100%;
-  }
-}
-
 .experience {
   margin-bottom: $section-spacing;
 
@@ -116,10 +64,6 @@ p {
 }
 
 @include media-breakpoint-up(lg) {
-  .profile-pic {
-    width: 60%;
-  }
-
   .tab-links .detail a {
     padding: 0;
   }
