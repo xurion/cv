@@ -6,13 +6,21 @@ type Props = {
 };
 
 const StyledImg = styled.img`
+  border-radius: 50%;
   margin-bottom: 10px;
+  filter: grayscale(100%);
+  margin-bottom: 10px;
+  transition: 1s;
 
   ${lg(`
     & {
       width: 60%;
     }
   `)}
+
+  &:hover {
+    filter: none;
+  }
 `;
 
 const Portrait = (props: Props) => (
