@@ -26,7 +26,7 @@
   ],
   "githubRibbonUrl": "https://github.com/xurion/cv",
   "introductions": [
-    "Hi! I'm Dean. I'm a passionate, customer-focused and quality-first software engineer & quality assurance consultant with a broad range of skills. I have more than fifteen years experience in delivering business and customer needs in a quality-driven Agile way, as well as nurturing teams to become the best delivery-focused units they can be.",
+    "Hi! I'm Dean. I'm a passionate, customer-focused and quality-first software engineer & quality engineering consultant with a broad range of skills. I have more than fifteen years experience in delivering business and customer needs in a quality-driven Agile way, as well as nurturing teams to become the best delivery-focused units they can be.",
     "I pride myself on enabling and guiding evolution at the team level, consistently striving for a high standard of work, being good-natured, outgoing and having a good sense of humour."
   ],
   "skills": [
@@ -74,17 +74,18 @@
   ],
   "experience": [
     {
-      "jobTitle": "Senior Software Development Engineer III",
+      "jobTitle": "Team Lead",
+      "otherTitles": ["Senior Software Development Engineer III"],
       "companyName": "Tesco Technology",
       "companyLogo": "tesco.png",
       "startDate": 1599469200000,
       "about": [
-        "Tasked with creating and maintaining various in-store till systems, including self checkout and attended tills whilst supporting the continuous rollout and stability via a housekeeping initiative.",
-        "New till systems were rolled out to over 7,000 tills running in nearly 1,700 stores across the UK. These systems severed a dependency on a third party EPOS solution."
+        "Lead a team tasked with creating and maintaining various in-store till systems, including self checkout and attended tills whilst supporting the continuous rollout and stability via a housekeeping initiative.",
+        "New till systems were rolled out to over 10,000 tills running in nearly 2,400 stores across the UK. These systems severed a dependency on a third party EPOS solution."
       ],
       "aboutReadMore": [
-        "A high level of unit test coverage is in place using Jest, as well as an end-to-end test setup utilising Cypress. I was responsible to converting the original Cypress suite into a Cucumber Gherkin syntax suite for ease of use and increase in productivity.",
-        "Systems are written in TypeScript using React, Redux, GraphQL, Node & Docker built using Azure Pipelines."
+        "A high level of unit test coverage is in place using Jest, as well as an end-to-end test setup utilising Cypress. My team were responsible for converting the original Cypress suite into a Cucumber Gherkin syntax suite to improve the understanding of the project as it reached maturity, as well as increase in testing productivity.",
+        "Systems are written in TypeScript using React, Redux, GraphQL, Node & Docker, built using an Azure continuous integration pipeline."
       ]
     },
     {
