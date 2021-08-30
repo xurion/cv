@@ -1,4 +1,3 @@
-import React from "react";
 import { NestedStringArray } from "../types";
 
 type ListProps = {

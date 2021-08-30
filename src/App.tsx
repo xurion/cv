@@ -1,6 +1,4 @@
-import React from "react";
 import { Container, Row, Col } from "reactstrap";
-
 import "./App.scss";
 import Experience from "./components/Experience";
 import Subtitle from "./components/Subtitle";

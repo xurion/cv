@@ -1,4 +1,3 @@
-import React from "react";
 import { NestedStringArray } from "../types";
 import List from "./List";
 

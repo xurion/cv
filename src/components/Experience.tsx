@@ -16,20 +16,20 @@ const StyledH3 = styled.h3`
   margin-bottom: 0;
 `;
 
+const primaryRgb = hexRgb(colours.primary);
+const CompanyLogoContainer = styled.div`
+  border: 1px solid
+    rgba(${primaryRgb.red}, ${primaryRgb.green}, ${primaryRgb.blue}, 0.25);
+  margin: 8px 0;
+  padding: 5px 7px;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+`;
+
 const Experience = (props: ExperienceProps) => {
-  const primaryRgb = hexRgb(colours.primary);
-  const CompanyLogoContainer = styled.div`
-    border: 1px solid
-      rgba(${primaryRgb.red}, ${primaryRgb.green}, ${primaryRgb.blue}, 0.25);
-    margin: 8px 0;
-    padding: 5px 7px;
-
-    img {
-      display: block;
-      width: 100%;
-    }
-  `;
-
   let classNames = "experience";
   const { experience, noMargin } = props;
   classNames = noMargin ? `${classNames} last` : classNames;

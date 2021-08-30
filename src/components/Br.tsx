@@ -1,9 +1,7 @@
 import styled from "styled-components";
 import { colours, sectionSpacing } from "../Theme";
 
-type Props = {};
-
-const Br = styled.br<Props>`
+const Br = styled.br`
   background: ${colours.secondary};
   content: " ";
   display: block;
