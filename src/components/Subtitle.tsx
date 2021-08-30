@@ -19,13 +19,10 @@ const Base = styled.div`
   }
 `;
 
-type SubtitleProps = {
-  children: React.ReactNode;
-};
-const Subtitle = (props: SubtitleProps) => {
+const Subtitle: React.FC = ({ children }) => {
   return (
     <>
-      <StyledH2 className="text-center">{props.children}</StyledH2>
+      <StyledH2 className="text-center">{children}</StyledH2>
       <Base />
     </>
   );
