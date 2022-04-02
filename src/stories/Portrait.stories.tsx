@@ -4,6 +4,7 @@ import Portrait from "../components/Portrait";
 import cloudStrife from "./assets/cloud-strife.jpg";
 
 export default {
+  title: "Components / Portrait",
   component: Portrait,
 } as ComponentMeta<typeof Portrait>;
 

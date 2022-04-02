@@ -3,15 +3,22 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import List from "../components/List";
 
 export default {
+  title: "Components / List",
   component: List,
 } as ComponentMeta<typeof List>;
 
 const Template: ComponentStory<typeof List> = (args) => <List {...args} />;
 
-export const Default = Template.bind({});
+export const Single = Template.bind({});
 
-Default.args = {
-  points: ["Point 1", "Point 2"],
+Single.args = {
+  points: ["Single point"],
+};
+
+export const Multiple = Template.bind({});
+
+Multiple.args = {
+  points: [["Point 1"], ["Point 2"]],
 };
 
 export const Nested = Template.bind({});

@@ -1,0 +1,17 @@
+{
+  "configurations": {
+    "desktop": {
+      "target": "chrome.docker",
+      "width": 1400,
+      "height": 768,
+      "deviceScaleFactor": 1,
+      "mobile": false,
+      "storiesFilter": "Pages / *"
+    },
+    "mobile": {
+      "target": "chrome.docker",
+      "preset": "iPhone 7",
+      "storiesFilter": "Pages / *"
+    }
+  }
+}

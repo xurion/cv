@@ -3,6 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import Subtitle from "../components/Subtitle";
 
 export default {
+  title: "Components / Subtitle",
   component: Subtitle,
 } as ComponentMeta<typeof Subtitle>;
 

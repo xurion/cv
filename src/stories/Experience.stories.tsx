@@ -4,6 +4,7 @@ import Experience from "../components/Experience";
 import companyLogo from "./assets/shinra.jpeg";
 
 export default {
+  title: "Components / Experience",
   component: Experience,
 } as ComponentMeta<typeof Experience>;
 

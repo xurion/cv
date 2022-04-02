@@ -6,6 +6,7 @@ import TabularDetails, {
 } from "../components/TabularDetails";
 
 export default {
+  title: "Components / TabularDetails",
   component: TabularDetails,
 } as ComponentMeta<typeof TabularDetails>;
 
