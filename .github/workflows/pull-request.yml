@@ -25,8 +25,8 @@ jobs:
         uses: foo-software/lighthouse-check-action@master
         id: lighthouseCheck
         with:
-          urls: "http://127.0.0.1:5000"
-          emulatedFormFactor: "all"
+          urls: "http://127.0.0.1:3000"
+          emulatedFormFactor: "desktop"
       - name: Handle Lighthouse Check results
         uses: foo-software/lighthouse-check-status-action@master
         with:
