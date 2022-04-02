@@ -18,4 +18,4 @@ All CV data is stored in `src/config.json`. See the [Configuration Guide](CONFIG
 
 ## Other
 
-Service workers have been disabled due to the static nature of this application.
+Service workers have been disabled due to the static nature of this application. tmp.
