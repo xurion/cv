@@ -6,6 +6,7 @@ import seventhHeavenLogo from "./assets/7th-heaven.jpeg";
 import cloudStrife from "./assets/cloud-strife.jpg";
 
 export default {
+  title: "Pages / CV",
   component: CV,
 } as ComponentMeta<typeof CV>;
 

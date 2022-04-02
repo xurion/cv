@@ -3,6 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import ReadMore from "../components/ReadMore";
 
 export default {
+  title: "Components / ReadMore",
   component: ReadMore,
 } as ComponentMeta<typeof ReadMore>;
 

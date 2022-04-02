@@ -3,6 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import TitledList from "../components/TitledList";
 
 export default {
+  title: "Components / TitledList",
   component: TitledList,
 } as ComponentMeta<typeof TitledList>;
 

@@ -68,18 +68,18 @@ const App = ({
         {githubRibbonUrl && <GithubRibbon url={githubRibbonUrl} />}
         <Row>
           <Col xs={12} sm={8} md={9} lg={10}>
-            <h1 className="text-center text-lg-left">{fullName}</h1>
+            <h1 className="text-center text-lg-start">{fullName}</h1>
             <Col xs={6} className="d-sm-none offset-3">
               <Portrait name={fullName} src={profileImage} />
             </Col>
-            <div className="h2 text-center text-lg-left">{profession}</div>
+            <div className="h2 text-center text-lg-start">{profession}</div>
           </Col>
           <Col
             xs={6}
             sm={4}
             md={3}
             lg={2}
-            className="d-none d-sm-block text-lg-right"
+            className="d-none d-sm-block text-lg-end"
           >
             <Portrait name={fullName} src={profileImage} />
           </Col>
@@ -141,18 +141,7 @@ const App = ({
               )}
               {email && <TabularDetail label="Email">{email}</TabularDetail>}
             </TabularDetails>
-            <Br className="d-lg-none" />
-          </Col>
 
-          <Col xs={12} lg={6}>
-            <Subtitle>Experience</Subtitle>
-            {experience.map((exp, i) => (
-              <Experience
-                key={i.toString()}
-                experience={exp}
-                noMargin={i === experience.length - 1}
-              />
-            ))}
             <Br />
 
             <Subtitle>Social</Subtitle>
@@ -169,6 +158,18 @@ const App = ({
                 ))}
               </TabularDetails>
             )}
+            <Br className="d-lg-none" />
+          </Col>
+
+          <Col xs={12} lg={6}>
+            <Subtitle>Experience</Subtitle>
+            {experience.map((exp, i) => (
+              <Experience
+                key={i.toString()}
+                experience={exp}
+                noMargin={i === experience.length - 1}
+              />
+            ))}
           </Col>
           <Col xs={12}>
             <Br />

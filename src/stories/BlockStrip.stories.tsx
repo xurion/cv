@@ -3,6 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import BlockStrip from "../components/BlockStrip";
 
 export default {
+  title: "Components / BlockStrip",
   component: BlockStrip,
 } as ComponentMeta<typeof BlockStrip>;
 
