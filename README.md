@@ -5,11 +5,11 @@ http://cv.deanj.co.uk/
 ## Install
 
 - `git clone git@github.com:xurion/cv.git`
-- `yarn install`
+- `npm install`
 
 ## Run
 
-- `yarn start`
+- `npm start`
 - Visit: http://localhost:3000/
 
 ## Configuration

@@ -21,11 +21,11 @@ jobs:
 
       # Install dependencies
       - name: Install dependencies
-        run: yarn install
+        run: npm install
 
       # Build the React app
       - name: Build
-        run: yarn build
+        run: npm run build
 
       # Deploy to gh-pages
       - name: Deploy

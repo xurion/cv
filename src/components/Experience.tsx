@@ -31,78 +31,89 @@ const CompanyLogoContainer = styled.div`
 
 const Experience = (props: ExperienceProps) => {
   let classNames = "experience";
-  const { experience, noMargin } = props;
+  const {
+    experience: {
+      companyLogo,
+      companyName,
+      formerCompanyName,
+      startDate,
+      endDate,
+      jobTitle,
+      otherTitles,
+      about,
+      aboutReadMore,
+      additionalSkillList,
+    },
+    noMargin,
+  } = props;
+
   classNames = noMargin ? `${classNames} last` : classNames;
 
   return (
     <div className={classNames}>
       <Row>
         <Col>
-          <StyledH3 className="text-center">{experience.jobTitle}</StyledH3>
+          <StyledH3 className="text-center">{jobTitle}</StyledH3>
         </Col>
       </Row>
       <Row className="justify-content-center">
         <Col xs="6">
           <CompanyLogoContainer>
-            <img
-              src={`${process.env.PUBLIC_URL}/images/${experience.companyLogo}`}
-              alt={experience.companyName}
-              title={experience.companyName}
-            />
+            <img src={companyLogo} alt={companyName} title={companyName} />
           </CompanyLogoContainer>
         </Col>
       </Row>
       <Row>
         <Col>
-          {experience.formerCompanyName && (
+          {formerCompanyName && (
             <div className="formerly text-center small">
-              Formerly {experience.formerCompanyName}
+              Formerly {formerCompanyName}
             </div>
           )}
           <p className="period text-center font-weight-bold small">
-            {typeof experience.startDate === "number" ? (
-              <Moment format="MMM YYYY">{experience.startDate}</Moment>
+            {typeof startDate === "number" ? (
+              <Moment format="MMM YYYY">{startDate}</Moment>
             ) : (
-              experience.startDate
+              startDate
             )}{" "}
             -{" "}
-            {experience.endDate ? (
-              typeof experience.endDate === "number" ? (
-                <Moment format="MMM YYYY">{experience.endDate}</Moment>
+            {endDate ? (
+              typeof endDate === "number" ? (
+                <Moment format="MMM YYYY">{endDate}</Moment>
               ) : (
-                experience.endDate
+                endDate
               )
             ) : (
               "Present"
             )}
           </p>
           <div className="experience-specifics">
-            {experience.otherTitles && (
+            {otherTitles && (
               <p className="other-titles text-left small">
-                <b>Other titles:</b> {experience.otherTitles.join(", ")}
+                <b>Other titles:</b> {otherTitles.join(", ")}
               </p>
             )}
-            {experience.about.map((about, i) => (
+            {about.map((about, i) => (
               <p key={i.toString()}>{about}</p>
             ))}
-            {experience.aboutReadMore && experience.aboutReadMore.length > 0 ? (
+            {aboutReadMore && aboutReadMore.length > 0 ? (
               <ReadMore>
-                {experience.aboutReadMore.map((about, i) => (
+                {aboutReadMore.map((about, i) => (
                   <p key={i.toString()}>{about}</p>
                 ))}
-                {experience.additionalSkillList && (
+                {additionalSkillList && (
                   <TitledList
-                    points={experience.additionalSkillList.skills}
-                    title={experience.additionalSkillList.title}
+                    points={additionalSkillList.skills}
+                    title={additionalSkillList.title}
                   />
                 )}
               </ReadMore>
             ) : (
-              experience.additionalSkillList && (
+              additionalSkillList && (
                 <ReadMore>
                   <TitledList
-                    points={experience.additionalSkillList.skills}
-                    title={experience.additionalSkillList.title}
+                    points={additionalSkillList.skills}
+                    title={additionalSkillList.title}
                   />
                 </ReadMore>
               )
