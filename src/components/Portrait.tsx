@@ -3,6 +3,7 @@ import { lg } from "../tools/mixins";
 
 type Props = {
   name: string;
+  src: string;
 };
 
 const StyledImg = styled.img`
@@ -23,12 +24,8 @@ const StyledImg = styled.img`
   }
 `;
 
-const Portrait = (props: Props) => (
-  <StyledImg
-    className="img-fluid"
-    src={`${process.env.PUBLIC_URL}/images/me.png`}
-    alt={props.name}
-  />
+const Portrait = ({ name, src }: Props) => (
+  <StyledImg className="img-fluid" src={src} alt={name} />
 );
 
 export default Portrait;
