@@ -33,7 +33,7 @@
   "dependencies": {
     "bootstrap": "^4.4.1",
     "hex-rgb": "^5.0.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-helmet": "^6.1.0",
