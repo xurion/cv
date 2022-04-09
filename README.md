@@ -15,7 +15,3 @@ http://cv.deanj.co.uk/
 ## Configuration
 
 All CV data is stored in `src/config.json`. See the [Configuration Guide](CONFIGURATION.md) to find out more.
-
-## Other
-
-Service workers have been disabled due to the static nature of this application.
