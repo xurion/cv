@@ -35,3 +35,23 @@ jobs:
           minBestPracticesScore: "90"
           minPerformanceScore: "90"
           minSeoScore: "90"
+
+  visual-regression:
+    runs-on: ubuntu-latest
+    steps:
+      # checkout the repo
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Storybook
+        run: npm run storybook:build
+
+      - name: Run Loki
+        run: npm run loki:ci
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: Handle Loki artifacts
+          path: .loki/
