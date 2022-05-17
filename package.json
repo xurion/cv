@@ -15,7 +15,8 @@
     "serve": "serve build",
     "loki": "loki --requireReference",
     "loki:ci": "loki --requireReference --reactUri file:./build/storybook",
-    "loki:update": "loki update"
+    "loki:update": "loki update",
+    "preinstall": "npx -y npm-force-resolutions"
   },
   "eslintConfig": {
     "extends": [
@@ -86,5 +87,8 @@
     "typescript": "^4.6.3",
     "web-vitals": "^2.1.4",
     "webpack": "^5.71.0"
+  },
+  "resolutions": {
+    "trim": "0.0.3"
   }
 }
