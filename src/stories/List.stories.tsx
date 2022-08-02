@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import List from "../components/List";
+import { List } from "../components/List";
 
 export default {
   title: "Components / List",

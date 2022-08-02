@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import CV from "../pages/CV";
+import { CV } from "../pages/CV";
 import shinraLogo from "./assets/shinra.jpeg";
 import seventhHeavenLogo from "./assets/7th-heaven.jpeg";
 import cloudStrife from "./assets/cloud-strife.jpg";

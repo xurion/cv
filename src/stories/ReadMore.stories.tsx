@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import ReadMore from "../components/ReadMore";
+import { ReadMore } from "../components/ReadMore";
 
 export default {
   title: "Components / ReadMore",

@@ -19,7 +19,7 @@ const Base = styled.div`
   }
 `;
 
-const Subtitle: React.FC = ({ children }) => {
+export const Subtitle: React.FC = ({ children }) => {
   return (
     <>
       <StyledH2 className="text-center">{children}</StyledH2>
@@ -27,5 +27,3 @@ const Subtitle: React.FC = ({ children }) => {
     </>
   );
 };
-
-export default Subtitle;

@@ -56,7 +56,7 @@ const GithubRibbonLink = styled.a`
   }
 `;
 
-const GithubRibbon = (props: GithubRibbonProps) => {
+export const GithubRibbon = (props: GithubRibbonProps) => {
   return (
     <GithubRibbonContainer>
       <GithubRibbonLink href={props.url} target="_blank" rel="noreferrer">
@@ -65,5 +65,3 @@ const GithubRibbon = (props: GithubRibbonProps) => {
     </GithubRibbonContainer>
   );
 };
-
-export default GithubRibbon;

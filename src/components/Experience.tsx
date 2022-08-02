@@ -1,8 +1,8 @@
 import { Row, Col } from "reactstrap";
 import Moment from "react-moment";
 import { Experience as _Experience } from "../types";
-import ReadMore from "./ReadMore";
-import TitledList from "./TitledList";
+import { ReadMore } from "./ReadMore";
+import { TitledList } from "./TitledList";
 import styled from "styled-components";
 import { colours } from "../Theme";
 import hexRgb from "hex-rgb";
@@ -29,7 +29,7 @@ const CompanyLogoContainer = styled.div`
   }
 `;
 
-const Experience = (props: ExperienceProps) => {
+export const Experience = (props: ExperienceProps) => {
   let classNames = "experience";
   const {
     experience: {
@@ -124,5 +124,3 @@ const Experience = (props: ExperienceProps) => {
     </div>
   );
 };
-
-export default Experience;

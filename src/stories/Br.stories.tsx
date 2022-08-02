@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import Br from "../components/Br";
+import { Br } from "../components/Br";
 
 export default {
   title: "Components / Br",

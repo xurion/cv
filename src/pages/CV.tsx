@@ -1,17 +1,18 @@
 import { Container, Row, Col } from "reactstrap";
-import Experience from "../components/Experience";
-import Subtitle from "../components/Subtitle";
-import ReadMore from "../components/ReadMore";
-import List from "../components/List";
-import TabularDetails, {
+import { Experience } from "../components/Experience";
+import { Subtitle } from "../components/Subtitle";
+import { ReadMore } from "../components/ReadMore";
+import { List } from "../components/List";
+import {
+  TabularDetails,
   TabularDetail,
   TabularDetailLink,
 } from "../components/TabularDetails";
-import Br from "../components/Br";
-import Portrait from "../components/Portrait";
-import GithubRibbon from "../components/GithubRibbon";
-import BlockStrip from "../components/BlockStrip";
-import Meta from "../components/Meta";
+import { Br } from "../components/Br";
+import { Portrait } from "../components/Portrait";
+import { GithubRibbon } from "../components/GithubRibbon";
+import { BlockStrip } from "../components/BlockStrip";
+import { Meta } from "../components/Meta";
 import {
   Experience as ExperienceType,
   NestedStringArray,
@@ -39,7 +40,7 @@ type Props = {
   telephone?: string;
 };
 
-const App = ({
+export const CV = ({
   citizenship,
   complimentarySkills,
   dob,
@@ -179,5 +180,3 @@ const App = ({
     </>
   );
 };
-
-export default App;

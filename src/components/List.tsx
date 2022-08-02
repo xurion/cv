@@ -16,7 +16,7 @@ const SubList = (props: SubListProps) => (
   </ul>
 );
 
-const List = (props: ListProps) => (
+export const List = (props: ListProps) => (
   <ul>
     {props.points.map((point, key) => {
       return (
@@ -32,5 +32,3 @@ const List = (props: ListProps) => (
     })}
   </ul>
 );
-
-export default List;

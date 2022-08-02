@@ -4,7 +4,7 @@ type MetaProps = {
   title: string;
 };
 
-const Meta = ({ title }: MetaProps) => {
+export const Meta = ({ title }: MetaProps) => {
   return (
     <>
       <Helmet>
@@ -14,5 +14,3 @@ const Meta = ({ title }: MetaProps) => {
     </>
   );
 };
-
-export default Meta;
