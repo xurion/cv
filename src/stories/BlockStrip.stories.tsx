@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import BlockStrip from "../components/BlockStrip";
+import { BlockStrip } from "../components/BlockStrip";
 
 export default {
   title: "Components / BlockStrip",

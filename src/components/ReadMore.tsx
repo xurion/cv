@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "reactstrap";
 
-const ReadMore: React.FC = ({ children }) => {
+export const ReadMore: React.FC = ({ children }) => {
   const [show, setShow] = useState(false);
 
   return show ? (
@@ -18,5 +18,3 @@ const ReadMore: React.FC = ({ children }) => {
     </Button>
   );
 };
-
-export default ReadMore;

@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import GithubRibbon from "../components/GithubRibbon";
+import { GithubRibbon } from "../components/GithubRibbon";
 
 export default {
   title: "Components / GithubRibbon",

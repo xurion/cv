@@ -1,18 +1,14 @@
-import React from "react";
-
 type TabularDetailsProps = {
   links?: boolean;
 };
 
-const TabularDetails: React.FC<TabularDetailsProps> = (props) => {
+export const TabularDetails: React.FC<TabularDetailsProps> = (props) => {
   return (
     <table className={`tab-details${props.links ? " tab-links" : ""}`}>
       <tbody>{props.children}</tbody>
     </table>
   );
 };
-
-export default TabularDetails;
 
 type TabularDetailProps = {
   label: string;

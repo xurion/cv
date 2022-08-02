@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import Portrait from "../components/Portrait";
+import { Portrait } from "../components/Portrait";
 import cloudStrife from "./assets/cloud-strife.jpg";
 
 export default {

@@ -24,8 +24,6 @@ const StyledImg = styled.img`
   }
 `;
 
-const Portrait = ({ name, src }: Props) => (
+export const Portrait = ({ name, src }: Props) => (
   <StyledImg className="img-fluid" src={src} alt={name} />
 );
-
-export default Portrait;

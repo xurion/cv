@@ -1,3 +1,1 @@
-const BlockStrip = () => <div className="block-strip" />;
-
-export default BlockStrip;
+export const BlockStrip = () => <div className="block-strip" />;

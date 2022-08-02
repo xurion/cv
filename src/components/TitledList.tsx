@@ -1,12 +1,12 @@
 import { NestedStringArray } from "../types";
-import List from "./List";
+import { List } from "./List";
 
 type TitledListProps = {
   title: string;
   points: NestedStringArray;
 };
 
-const TitledList = (props: TitledListProps) => {
+export const TitledList = (props: TitledListProps) => {
   return (
     <>
       <p>{props.title}</p>
@@ -14,5 +14,3 @@ const TitledList = (props: TitledListProps) => {
     </>
   );
 };
-
-export default TitledList;

@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import TitledList from "../components/TitledList";
+import { TitledList } from "../components/TitledList";
 
 export default {
   title: "Components / TitledList",

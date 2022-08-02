@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import Subtitle from "../components/Subtitle";
+import { Subtitle } from "../components/Subtitle";
 
 export default {
   title: "Components / Subtitle",

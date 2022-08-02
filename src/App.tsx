@@ -1,5 +1,5 @@
 import "./App.scss";
-import CV from "./pages/CV";
+import { CV } from "./pages/CV";
 import getConfig from "./Config";
 
 const {
@@ -28,7 +28,7 @@ const experience = exp.map(({ companyLogo, ...rest }) => ({
   ...rest,
 }));
 
-const App = () => (
+export const App = () => (
   <CV
     citizenship={citizenship}
     complimentarySkills={complimentarySkills}
@@ -50,5 +50,3 @@ const App = () => (
     telephone={telephone}
   />
 );
-
-export default App;

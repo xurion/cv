@@ -1,6 +1,7 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import TabularDetails, {
+import {
+  TabularDetails,
   TabularDetail,
   TabularDetailLink,
 } from "../components/TabularDetails";

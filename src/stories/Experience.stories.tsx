@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import Experience from "../components/Experience";
+import { Experience } from "../components/Experience";
 import companyLogo from "./assets/shinra.jpeg";
 
 export default {
