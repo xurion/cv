@@ -1,6 +1,6 @@
 # My personal CV
 
-http://cv.deanj.co.uk/
+http://www.deanj.co.uk
 
 ## Install
 
