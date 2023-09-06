@@ -1,14 +1,12 @@
-import React from "react";
 import styled from "styled-components";
-import { colours, fontSizes } from "../Theme";
 
-const StyledH2 = styled.h2`
+const Text = styled.h2`
   margin-bottom: 0;
 `;
 
-const Base = styled.div`
-  color: ${colours.secondary};
-  font-size: ${fontSizes.h2};
+const Baseline = styled.div`
+  color: ${({ theme }) => theme.colour.secondary};
+  font-size: ${({ theme }) => theme.font.lg};
   line-height: 0.5;
   margin-bottom: 1rem;
   opacity: 0.25;
@@ -19,11 +17,15 @@ const Base = styled.div`
   }
 `;
 
-export const Subtitle: React.FC = ({ children }) => {
+type Props = {
+  children: string;
+};
+
+export const Subtitle = ({ children }: Props) => {
   return (
     <>
-      <StyledH2 className="text-center">{children}</StyledH2>
-      <Base />
+      <Text className="text-center">{children}</Text>
+      <Baseline />
     </>
   );
 };
