@@ -4,32 +4,35 @@ import { Experience as _Experience } from "../types";
 import { ReadMore } from "./ReadMore";
 import { TitledList } from "./TitledList";
 import styled from "styled-components";
-import { colours } from "../Theme";
 import hexRgb from "hex-rgb";
 
-type ExperienceProps = {
+type Props = {
   experience: _Experience;
   noMargin?: boolean;
 };
 
-const StyledH3 = styled.h3`
+const JobTitle = styled.h3`
   margin-bottom: 0;
 `;
 
-const primaryRgb = hexRgb(colours.primary);
 const CompanyLogoContainer = styled.div`
-  border: 1px solid
-    rgba(${primaryRgb.red}, ${primaryRgb.green}, ${primaryRgb.blue}, 0.25);
-  margin: 8px 0;
-  padding: 5px 7px;
+  ${({ theme }) => {
+    const primaryRgb = hexRgb(theme.colour.primary);
+    return `
+      border: 1px solid
+      rgba(${primaryRgb.red}, ${primaryRgb.green}, ${primaryRgb.blue}, 0.25);
+      margin: 8px 0;
+      padding: 5px 7px;
 
-  img {
-    display: block;
-    width: 100%;
-  }
+      img {
+        display: block;
+        width: 100%;
+      };
+    `;
+  }}
 `;
 
-export const Experience = (props: ExperienceProps) => {
+export const Experience = (props: Props) => {
   let classNames = "experience";
   const {
     experience: {
@@ -53,7 +56,7 @@ export const Experience = (props: ExperienceProps) => {
     <div className={classNames}>
       <Row>
         <Col>
-          <StyledH3 className="text-center">{jobTitle}</StyledH3>
+          <JobTitle className="text-center">{jobTitle}</JobTitle>
         </Col>
       </Row>
       <Row className="justify-content-center">
