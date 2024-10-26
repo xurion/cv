@@ -1,6 +1,7 @@
 {
   "name": "cv-vite",
   "private": true,
+  "homepage": "https://xurion.github.io/cv",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
