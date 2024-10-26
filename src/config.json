@@ -1,18 +1,13 @@
 {
   "forenames": "Dean",
   "surname": "James",
-  "profession": "Agile Software Engineer & Quality Engineering Consultant",
+  "profession": "Agile Software Development Engineering Manager",
   "dob": "13th January 1981",
   "gender": "Male",
   "location": "Southend, Essex",
   "citizenship": "British",
   "email": "jobs@deanj.co.uk",
   "social": [
-    {
-      "label": "Twitter",
-      "url": "https://twitter.com/leandeanjames",
-      "text": "@leandeanjames"
-    },
     {
       "label": "LinkedIn",
       "url": "https://www.linkedin.com/in/dean-james-74860014",
@@ -24,20 +19,20 @@
       "text": "cv.deanj.co.uk"
     }
   ],
-  "githubRibbonUrl": "https://github.com/xurion/cv",
+  "githubUrl": "https://github.com/xurion/cv",
   "introductions": [
-    "Hi! I'm Dean. I'm a passionate, customer-focused and quality-first software engineer & quality engineering consultant with a broad range of skills. I have more than fifteen years experience in delivering business and customer needs in a quality-driven Agile way, as well as nurturing teams to become the best delivery-focused units they can be.",
+    "Hi! I'm Dean. I'm a passionate, customer-focused and quality-first software development manager (SDM), focusing on quality engineering with a broad range of skills. I have more than fifteen years experience in delivering business goals in a quality-driven Agile way, as well as nurturing teams to become the best delivery-focused units they can be.",
     "I pride myself on enabling and guiding evolution at the team level, consistently striving for a high standard of work, being good-natured, outgoing and having a good sense of humour."
   ],
   "skills": [
     "TypeScript, JavaScript, JSX",
     "React, Redux",
     "Jest, React Testing Library",
+    "Playwright, Cypress, WebdriverIO",
     "Behaviour-driven development (BDD)",
     "Test-driven development (TDD)",
-    "Cypress, WebdriverIO",
     "Gherkin / Cucumber",
-    "Continuous integration & deployment",
+    "CI / CD",
     "Styled Components",
     "CSS, LESS, SASS/SCSS",
     "Node",
@@ -46,12 +41,12 @@
     "Photoshop",
     "SOLID principles",
     "Trunk based development",
-    "Monitoring, Datadog, Splunk"
+    "Splunk, Grafana, Datadog"
   ],
   "complimentarySkills": [
     "Gherkin scenario and BDD expert",
     "Lean Kanban consultant",
-    "Probabilistic forecaster over estimation",
+    "Probabilistic forecaster",
     "Technical excellence evangelist",
     "Quality-first focus",
     "Advocate for transparent teams",
@@ -61,28 +56,28 @@
   ],
   "me": [
     "Software engineering has always been one of my core passions.",
-    "For the past decade I have focused heavily on the sustainable creation of test-validated software at a rapid pace. I'm a data-driven thinker and I use my strong Agile analytical and organisational skills to drive technically excellent and sustainable solutions that my team and I build."
+    "For the past decade I have focused heavily on the sustainable development of test-validated software at sustained pace. I'm a data-driven thinker and I use my strong Agile analytical and organisational skills to drive technically excellent and sustainable solutions that my team and I build."
   ],
   "meReadMore": [
     "I am able to work on my own, but I have almost always found that teamwork trumps all silo-based work.",
-    "I am lively, outgoing and approachable. I love playing video games (especially RPGs), developing software on pet projects (currently learning Lua!) and cooking in my custom-built kitchen, having wanted to be a chef when I was younger (before I got my hands on a PC!).",
+    "I am lively, outgoing and approachable. I have a passion for video games (especially RPGs), developing software on pet projects (Lua is a hobby of mine!) and cooking in my custom-built kitchen, having wanted to be a chef when I was younger (before I got my hands on a PC!).",
     "I'm a fan of electronic music and enjoy attending music festivals.",
     "My person-to-person and written skills are excellent and I always try to approach my work with enthusiasm and adaptability."
   ],
   "experience": [
     {
-      "jobTitle": "Team Lead",
+      "jobTitle": "SDM (Software Development Manager)",
       "otherTitles": ["Senior Software Development Engineer III"],
       "companyName": "Tesco Technology",
       "companyLogo": "tesco.png",
       "startDate": 1599469200000,
       "about": [
-        "Lead a team tasked with creating and maintaining various in-store till systems, including self checkout and attended tills whilst supporting the continuous rollout and stability via a housekeeping initiative.",
-        "New till systems were rolled out to over 10,000 tills running in nearly 2,400 stores across the UK. These systems severed a dependency on a third party EPOS solution."
+        "Lead a team tasked with creating and maintaining various in-store till systems, including self checkout and attended tills whilst supporting UK production stores via a housekeeping initiative.",
+        "New till systems were rolled out to over 30,000 tills running in nearly 3,400 stores across the UK. This system severed a dependency on a third party EPOS solution."
       ],
       "aboutReadMore": [
-        "A high level of unit test coverage is in place using Jest, as well as an end-to-end test setup utilising Cypress. My team were responsible for converting the original Cypress suite into a Cucumber Gherkin syntax suite to improve the understanding of the project as it reached maturity, as well as increase in testing productivity.",
-        "Systems are written in TypeScript using React, Redux, GraphQL, Node & Docker, built using an Azure continuous integration pipeline."
+        "A high level of unit test coverage is in place using Jest, as well as an end-to-end test setup utilising UI-based test frameworks, such as Cypress. As the project matured, my team identified the need to convert the older Cypress tests into a new Playwright suite to improve the developer experience, reduce test complexity and increase productivity.",
+        "Systems are written in TypeScript using React, Redux, GraphQL, Node & Docker, taking advantage of trunk-based development, using an Azure continuous integration pipeline."
       ]
     },
     {
@@ -120,7 +115,7 @@
         "title": "Agile responsibilities included:",
         "skills": [
           "Enable and coach the team to utilise Kanban to balance capacity against demand and prevent burnout.",
-          "Analyse team bottlenecks and adapt the team approach as required, using Little’s Law, queueing theory and the theory of constraints.",
+          "Analyse team bottlenecks and adapt the team approach as required, using Little's Law, queueing theory and the theory of constraints.",
           "Track team delivery cadence with cycle times and lead times to identify issues early.",
           "Facilitate team ceremonies and reduce feedback loops with face-to-face conversations.",
           "Encourage a safe-to-fail culture for developers to thrive with psychological safety.",

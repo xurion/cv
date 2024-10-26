@@ -1,0 +1,1 @@
+export { TabularDetails } from './TabularDetails';

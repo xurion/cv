@@ -1,0 +1,1 @@
+export { Portrait } from './Portrait';

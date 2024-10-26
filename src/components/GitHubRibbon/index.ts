@@ -1,0 +1,1 @@
+export { GitHubRibbon } from './GitHubRibbon';
