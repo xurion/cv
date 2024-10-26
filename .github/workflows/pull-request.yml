@@ -1,12 +1,9 @@
 name: Tests for pull requests
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
   pull_request:
     branches:
-      - "**" # matches every branch
-      - "!master" # but excludes master
+      - '**' # every branch
 
 jobs:
   visual-regression:
@@ -27,6 +24,8 @@ jobs:
         run: npm run loki:ci
 
       - uses: actions/upload-artifact@v3
+        if: always()
         with:
+          include-hidden-files: true
           name: Handle Loki artifacts
           path: .loki/

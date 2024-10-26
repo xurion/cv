@@ -8,37 +8,37 @@ type StringOrStringArray = string | string[];
 export type NestedStringArray = StringOrStringArray[];
 
 export type Experience = {
-  jobTitle: string;
-  otherTitles?: string[];
-  companyName: string;
-  formerCompanyName?: string;
-  companyLogo: string;
-  startDate: string | number;
-  endDate?: string | number;
   about: string[];
   aboutReadMore?: string[];
   additionalSkillList?: {
     title: string;
     skills: NestedStringArray;
   };
+  companyLogo: string;
+  companyName: string;
+  endDate?: string | number;
+  formerCompanyName?: string;
+  jobTitle: string;
+  otherTitles?: string[];
+  startDate: string | number;
 };
 
 export type Config = {
-  forenames: string;
-  surname: string;
-  profession: string;
-  dob?: string;
-  gender?: string;
-  location: string;
   citizenship: string;
-  telephone?: string;
+  complimentarySkills?: string[];
+  dob?: string;
   email?: string;
-  social: Social[];
+  experience: Experience[];
+  forenames: string;
+  gender?: string;
   githubRibbonUrl?: string;
   introductions: string[];
-  skills: string[];
-  complimentarySkills?: string[];
+  location: string;
   me: string[];
   meReadMore?: string[];
-  experience: Experience[];
+  profession: string;
+  skills: string[];
+  social: Social[];
+  surname: string;
+  telephone?: string;
 };

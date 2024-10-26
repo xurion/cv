@@ -9,14 +9,14 @@ All CV information is stored in [src/config.json](src/config.json). This documen
 | forenames           | string, required                      | One or more of your first names.                                                                              |
 | surname             | string, required                      | Your surname.                                                                                                 |
 | profession          | string, required                      | How you would describe your profession or expertise.                                                          |
-| dob                 | string, optional                      | Your date of birth.                                                                                            |
+| dob                 | string, optional                      | Your date of birth.                                                                                           |
 | gender              | string, optional                      | Your gender.                                                                                                  |
 | location            | string, required                      | Where you are located.                                                                                        |
 | citizenship         | string, required                      | Your citizenship.                                                                                             |
 | telephone           | string, optional                      | Your telephone number. A string so you can freely format the number.                                          |
 | email               | string, optional                      | Your email address. This does not render as a link because viewers rarely will use this to generate an email. |
 | social              | [Social](#Social)[], required         | An array of social links, such as LinkedIn.                                                                   |
-| githubRibbonUrl     | string, optional                      | Displays a Github ribbon motif with the given link to your source code.                                       |
+| githubUrl           | string, optional                      | Displays a Github ribbon motif with the given link to your source code.                                       |
 | introductions       | string[], required                    | An array of paragraphs that introduce you as a potential employee.                                            |
 | skills              | string[], required                    | An array of your core skills.                                                                                 |
 | complimentarySkills | string[], optional                    | Additional non-core skills you bring to the table.                                                            |
