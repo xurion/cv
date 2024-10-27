@@ -1,6 +1,6 @@
 # My personal CV
 
-http://www.deanj.co.uk
+https://cv.github.io/cv
 
 ## Install
 
