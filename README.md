@@ -1,6 +1,6 @@
 # My personal CV
 
-https://cv.github.io/cv
+https://xurion.github.io/cv
 
 ## Install
 
