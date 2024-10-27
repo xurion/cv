@@ -6,78 +6,74 @@
   "gender": "Male",
   "location": "Southend, Essex",
   "citizenship": "British",
-  "email": "jobs@deanj.co.uk",
   "social": [
     {
       "label": "LinkedIn",
-      "url": "https://www.linkedin.com/in/dean-james-74860014",
-      "text": "linkedin.com/in/dean-james-74860014"
+      "url": "https://www.linkedin.com/in/dean-james-5b19a7324",
+      "text": "linkedin.com/in/dean-james-5b19a7324"
     },
     {
       "label": "CV",
-      "url": "http://cv.deanj.co.uk",
-      "text": "cv.deanj.co.uk"
+      "url": "http://xurion.github.io/cv",
+      "text": "xurion.github.io/cv"
     }
   ],
   "githubUrl": "https://github.com/xurion/cv",
   "introductions": [
-    "Hi! I'm Dean. I'm a passionate, customer-focused and quality-first software development manager (SDM), focusing on quality engineering with a broad range of skills. I have more than fifteen years experience in delivering business goals in a quality-driven Agile way, as well as nurturing teams to become the best delivery-focused units they can be.",
+    "Hi! I'm Dean. I'm a passionate, customer-focused and quality-first software engineering manager, focusing on quality engineering with a broad range of skills. I have more than fifteen years experience in delivering business goals in a quality-driven Agile way, as well as nurturing teams to become the best delivery-focused units they can be.",
     "I pride myself on enabling and guiding evolution at the team level, consistently striving for a high standard of work, being good-natured, outgoing and having a good sense of humour."
   ],
   "skills": [
     "TypeScript, JavaScript, JSX",
     "React, Redux",
-    "Jest, React Testing Library",
+    "Jest, React Testing Library, Mocha, Jasmine, Chai",
     "Playwright, Cypress, WebdriverIO",
-    "Behaviour-driven development (BDD)",
-    "Test-driven development (TDD)",
+    "Behaviour & test-driven development (BDD / TDD)",
     "Gherkin / Cucumber",
-    "CI / CD",
-    "Styled Components",
-    "CSS, LESS, SASS/SCSS",
+    "Continuous integration & deployment",
+    "Tailwind, Styled Components",
+    "CSS, LESS, SCSS",
     "Node",
     "Docker",
     "NPM / Yarn",
-    "Photoshop",
     "SOLID principles",
     "Trunk based development",
     "Splunk, Grafana, Datadog"
   ],
   "complimentarySkills": [
-    "Gherkin scenario and BDD expert",
-    "Lean Kanban consultant",
-    "Probabilistic forecaster",
-    "Technical excellence evangelist",
+    "Gherkin scenario and BDD expertise",
+    "Lean Kanban evangelism",
+    "Probabilistic forecasting",
     "Quality-first focus",
-    "Advocate for transparent teams",
-    "Nurturer of safe-to-fail and psychologically safe cultures",
+    "Team transparency advocate",
+    "Safe-to-fail and psychologically safe nurturer",
     "Analyser of all things measurable",
     "Minimum viable product & time to market advisor"
   ],
   "me": [
     "Software engineering has always been one of my core passions.",
-    "For the past decade I have focused heavily on the sustainable development of test-validated software at sustained pace. I'm a data-driven thinker and I use my strong Agile analytical and organisational skills to drive technically excellent and sustainable solutions that my team and I build."
+    "For well over a decade, I have focused heavily on the sustainable development of test-validated software at sustained pace. I'm a data-driven thinker and I use my strong Agile analytical and organisational skills to drive technically excellent and sustainable solutions that my team and I build."
   ],
   "meReadMore": [
-    "I am able to work on my own, but I have almost always found that teamwork trumps all silo-based work.",
+    "I am able to work on my own, but I believe teamwork trumps almost all siloed approaches.",
     "I am lively, outgoing and approachable. I have a passion for video games (especially RPGs), developing software on pet projects (Lua is a hobby of mine!) and cooking in my custom-built kitchen, having wanted to be a chef when I was younger (before I got my hands on a PC!).",
     "I'm a fan of electronic music and enjoy attending music festivals.",
     "My person-to-person and written skills are excellent and I always try to approach my work with enthusiasm and adaptability."
   ],
   "experience": [
     {
-      "jobTitle": "SDM (Software Development Manager)",
+      "jobTitle": "Software Engineering Manager",
       "otherTitles": ["Senior Software Development Engineer III"],
       "companyName": "Tesco Technology",
       "companyLogo": "tesco.png",
       "startDate": 1599469200000,
       "about": [
         "Lead a team tasked with creating and maintaining various in-store till systems, including self checkout and attended tills whilst supporting UK production stores via a housekeeping initiative.",
-        "New till systems were rolled out to over 30,000 tills running in nearly 3,400 stores across the UK. This system severed a dependency on a third party EPOS solution."
+        "New till systems were rolled out to over 35,000 tills running in nearly 3,400 stores across the UK, severing a costly dependency on a third party EPOS solution."
       ],
       "aboutReadMore": [
-        "A high level of unit test coverage is in place using Jest, as well as an end-to-end test setup utilising UI-based test frameworks, such as Cypress. As the project matured, my team identified the need to convert the older Cypress tests into a new Playwright suite to improve the developer experience, reduce test complexity and increase productivity.",
-        "Systems are written in TypeScript using React, Redux, GraphQL, Node & Docker, taking advantage of trunk-based development, using an Azure continuous integration pipeline."
+        "A high level of unit test coverage is in place using Jest, as well as an end-to-end test setup utilising Playwright. As the project matured, I lead the need to evolve our ways of working in many different areas, including production support as well as how we work internally with other teams.",
+        "Systems are written in TypeScript using React, Redux, Node & Docker, taking advantage of trunk-based development with an Azure continuous integration pipeline."
       ]
     },
     {
